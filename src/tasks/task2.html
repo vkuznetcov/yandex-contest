@@ -1,0 +1,339 @@
+
+<!DOCTYPE html><html class="i-ua_js_no i-ua_css_standard" lang="ru"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>B. Через тернии к клиенту — Стажировка осень-зима 2022: бэкенд — Яндекс.Контест</title><link rel="shortcut icon" href="/favicon.ico?1661984806718"/><script nonce="/us44tclMEdeeS7q8a9DCQ==">;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);;(function(d,e,c,n,w,v,f){e=d.documentElement;c="className";n="createElementNS";f="firstChild";w="http://www.w3.org/2000/svg";e[c]+=" i-ua_svg_"+(!!d[n]&&!!d[n](w,"svg").createSVGRect?"yes":"no");v=d.createElement("div");v.innerHTML="<svg/>";e[c]+=" i-ua_inlinesvg_"+((v[f]&&v[f].namespaceURI)==w?"yes":"no");})(document);;(function(d,e,p){e=d.documentElement;p="placeholder";e.className+=" i-ua_"+p+(p in d.createElement("input")?"_yes":"_no")})(document);</script><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/highlighter/highlighter.css"/><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.css"/><!--[if IE 6]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie6.css"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie7.css"/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie8.css"/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie9.css"/><![endif]--><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.print.css" media="print"/><script src="//yastatic.net/jquery/1.8.3/jquery.min.js" nonce="xLhylCobGSifG00GLI2wTg=="></script><script src="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ru.js" nonce="/us44tclMEdeeS7q8a9DCQ=="></script><meta name="description" content="Яндекс.Контест это сервис, позволяющий программистам со всего мира соревноваться на предложенных задачах, а преподавателям и авторам задач -- размещать задания и серии заданий и предоставлять доступ пользователям через интернет."/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://yastatic.net/s3/contest/katex/v0.13.0/katex.min.css"/><script nonce="/us44tclMEdeeS7q8a9DCQ==">window.MathJax = { AssistiveMML: { disabled: true }, showMathMenu: false };</script><script src="//yandex.st/contest/mathjax/MathJax.js?config=MML_CHTML" nonce="/us44tclMEdeeS7q8a9DCQ=="></script><script src="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/highlighter/highlighter.js" nonce="/us44tclMEdeeS7q8a9DCQ=="></script></head><body class="b-page b-page__body i-global i-ua i-ua_interaction_yes page i-bem" data-bem="{&quot;i-global&quot;:{&quot;lang&quot;:&quot;ru&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;content-region&quot;:&quot;ru&quot;,&quot;click-host&quot;:&quot;//clck.yandex.ru&quot;,&quot;passport-host&quot;:&quot;https://passport.yandex.ru&quot;,&quot;pass-host&quot;:&quot;pass.yandex.ru&quot;,&quot;social-host&quot;:&quot;social.yandex.ru&quot;,&quot;export-host&quot;:&quot;https://export.yandex.ru&quot;,&quot;login&quot;:&quot;vkuznetcov48&quot;,&quot;lego-static-host&quot;:&quot;//yastatic.net/lego/2.10-142&quot;,&quot;id&quot;:&quot;contest&quot;,&quot;displayName&quot;:&quot;Vadim Kuznetsov&quot;,&quot;yandexuid&quot;:&quot;2503087131659277826&quot;,&quot;social-retpath&quot;:&quot;https://contest.yandex.ru/i-social__closer.html&quot;,&quot;retpath&quot;:&quot;http://contest.yandex.ru/contest/39459/problems/B/?success=69893135&quot;,&quot;passport-msg&quot;:&quot;contest&quot;},&quot;i-ua&quot;:{},&quot;page&quot;:{}}"><div class="page__head island"><div class="banners"></div><div class="header layout layout_type_serp i-bem" data-bem="{&quot;header&quot;:{}}" role="banner"><div class="header__main"><div class="layout__col layout__col_size_3 header__logo"><div class="logo2 logo2_lang_ru"><a class="logo2__yandex" href="//www.yandex.ru"><div class="logo2__text">Яндекс</div></a><a class="logo2__service" href="/"><div class="logo2__text">Контест</div></a></div></div><div class="layout__col header__nav"><div class="dropdown-menu dropdown-menu_theme_ffffff lang-switcher inline-block i-bem" data-bem="{&quot;dropdown-menu&quot;:{},&quot;lang-switcher&quot;:{&quot;tune&quot;:&quot;http://tune.yandex.ru&quot;}}"><span class="lang-switcher__lang lang-switcher__lang_selected_yes link link_pseudo_yes dropdown-menu__switcher i-bem" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup lang-switcher__popup-content dropdown-menu__popup"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><span class="lang-switcher__lang lang-switcher__lang_selected_yes"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><a class="lang-switcher__lang" data-bem="{&quot;lang-switcher__lang&quot;:{&quot;lang&quot;:&quot;en&quot;,&quot;url&quot;:&quot;http://contest.yandex.ru/contest/39459/problems/B/?success=69893135&amp;lang=en&quot;}}" href="http://contest.yandex.ru/contest/39459/problems/B/?success=69893135&amp;lang=en" role="button" tabindex="0"><div class="country-flag country-flag_s16_gb lang-switcher__flag"></div><span class="lang-switcher__lang-name">Английский</span></a></li><li class="b-menu-vert__layout-unit lang-switcher__all"><a class="link" href="http://tune.yandex.ru/lang/">Ещё</a></li></ul></div></div></div></div><div class="dropdown-menu dropdown-menu_user_yes dropdown-menu_theme_ffffff i-bem" data-bem="{&quot;dropdown-menu&quot;:{}}"><a class="user user_menu_yes user_contest_yes i-bem" data-bem="{&quot;user&quot;:{&quot;domikMods&quot;:{&quot;logo&quot;:&quot;ru&quot;},&quot;url&quot;:&quot;https://passport.yandex.ru/auth?origin=contest&amp;retpath=http://contest.yandex.ru/contest/39459/problems/B/?success=69893135&quot;}}" href="https://passport.yandex.ru/passport?mode=passport" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"><span class="user__name" data-bem="{&quot;user__name&quot;:{&quot;maxLength&quot;:16,&quot;maxLengthRelative&quot;:3,&quot;isUglyUserName&quot;:false}}"><span class="user__first-letter">V</span>adim Kuznetsov</span></a><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup popup popup_fade-out_no popup_watch-scroll_no dropdown-menu__popup dropdown-menu__popup_user_yes i-bem" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:&quot;bottom-right&quot;}}"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru"><img class="image image_icon_mail" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="link__text user-menu-update i-bem" data-bem="{&quot;user-menu-update&quot;:{}}">Нет новых писем</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru/compose">Написать письмо</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://disk.yandex.ru?source=main-loginmenu"><img class="image image_icon_disk" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="link__text">Мой Диск</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item b-menu-vert__item_separator_yes" role="menuitem"></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="http://tune.yandex.ru">Настройка</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://passport.yandex.ru">Паспорт</a></div></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><div class="b-menu-vert__item" role="menuitem"><a class="link user user__logout i-bem" data-bem="{&quot;user&quot;:{&quot;_uniqId&quot;:&quot;user__logout&quot;}}" href="https://passport.yandex.ru/passport?mode=logout&amp;yu=2503087131659277826&amp;retpath=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F39459%2Fproblems%2FB%2F%3Fsuccess%3D69893135">Выйти</a></div></li></ul></div></div></div></div></div></div></div><ul class="tabs-menu tabs-menu_role_sections tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_type_stroked i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><div class="tabs-menu__inner"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="/contest/3/enter/">Пробный контест</a></li><li class="tabs-menu__tab"><a class="link" href="/contest-list/">Архив соревнований</a></li><li class="tabs-menu__tab"><a class="link" href="/compilers/">Настройки компиляторов</a></li><li class="tabs-menu__tab"><a class="link" href="/errors/">Значения ошибок</a></li><li class="tabs-menu__tab"><a class="link" href="/teams/">Команды</a></li></div></ul></div><div class="page__main page__sect"><div class="content content_theme_contest island"><div class="contest-head"><div class="contest-head__item contest-head__item_role_title"><a class="link" href="/contest/39459/enter/?retPage=">Стажировка осень-зима 2022: бэкенд</a></div><div class="contest-head__item contest-head__item_role_status"><div class="status i-bem" data-bem="{&quot;status&quot;:{&quot;finishTime&quot;:1661991116000}}"><div class="status__props"><div class="status__prop"><div class="status__name inline-block"><img class="image image_type_clock" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/></div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661984806454}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">старт:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661973116000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">финиш:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661991116000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">до финиша:</div><div class="status__value inline-block"><div class="countdown i-bem" data-bem="{&quot;countdown&quot;:{&quot;name&quot;:&quot;refresh-timer&quot;,&quot;duration&quot;:6309546}}"></div></div></div></div><div class="status__props"><div class="snippet snippet_hidden_yes status__snippet i-bem" data-bem="{&quot;snippet&quot;:{}}" id=":hidden-info:hidden-status"><div class="snippet__content"><div class="snippet__props"><div class="status__prop"><div class="status__name inline-block">начало:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661288400000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">длительность:</div><div class="status__value inline-block">05:00:00</div></div></div></div></div><span class="link link_pseudo_yes link_role_hidden-info i-bem" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0" id=":hidden-status"><span class="link__inner">...</span></span></div></div></div><div class="contest-head__item contest-head__item_role_aside"><div class="aside i-bem" data-bem="{&quot;aside&quot;:{&quot;sk&quot;:&quot;uc5986e46c6e1a40707b62badbfc4bd30&quot;,&quot;contestId&quot;:&quot;39459&quot;}}"><button class="button button_theme_pseudo button_pseudo_yes button_role_clarifications button_size_s aside__button i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button"><span class="button__text">Объявления жюри</span></button><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_role_message-box i-bem" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;offset&quot;:{&quot;top&quot;:10}}}}"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="popup__helper"></div><div class="msg msg_type_info" data-id="157194" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Недоступность внешних библиотек (numpy, pandas, boost и др.)</h6>Для использования доступны лишь библиотеки / модули, входящие в стандартную сборку указанного компилятора.
+
+  Внешние библиотеки (которые необходимо устанавливать отдельно) НЕДОСТУПНЫ для использования в программе.
+
+  Примерами таких НЕДОСТУПНЫХ библиотек являются:
+  - numpy
+  - pandas
+  - boost</div><div class="msg msg_type_info" data-id="156978" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Показ вердиктов за частичные решения</h6>Мы исправили отображение вердиктов - теперь вы увидите не только номер теста, на котором ваше решение валится, но и вердикт, который ему поставила система.</div><div class="msg msg_type_info" data-id="156975" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Вердикты TL и ML и использованные ресурсы</h6>Если вы получаете вердикты TL / ML, то вы можете увидеть рядом с вердиктом время / память, очень близкие к указанным в задаче.
+
+  К примеру, вы можете увидеть TL (2.005 сек) при ограничении в 2 секунды.
+
+  Это НЕ значит, что ваша программа работала всего лишь на 0.005 секунд дольше.
+
+  Это значит, что вашу программу ОСТАНОВИЛИ через 0.005 секунд после выхода за ограничения по времени.
+
+  Мы постарались выставить ограничения таким образом, чтобы корректное решение без каких-либо специфических НЕАСИМПТОТИЧЕСКИХ оптимизаций (кроме оптимизаций ввода/вывода, указанных в других оповещениях) проходило примерно за половину выделенных времени и памяти.</div><div class="msg msg_type_info" data-id="156972" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Возможные вердикты</h6>- OK - задача зачтена.
+  Если вы получили по задаче ОК, то его не уже не отнимут, даже если вы перепошлете на ту же задачу неверное решение.
+
+  - CE - compilation error - ошибка компиляции. Вы можете просмотреть ошибку, выдаваемую компилятором.
+
+  - WA - wrong answer - неправильный ответ
+  - RE - runtime error - ошибка исполнения (деление на ноль, выход за границу массива и т.д.)
+  - TL - time limit - превышено ограничение по времени (на тест)
+  - ML - memory limit - превышено ограничение по памяти (на тест)
+  - PE - presentation error - частный случай WA, когда вывод в несовпадающем с ожидаемым формате
+  - и т.д.</div><div class="msg msg_type_info" data-id="156971" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тестирование решений</h6>Решения тестируются по очереди на представленных в системе тестах (тесты из условия являются их частью).
+
+  Если решение проходит все тесты - оно считается &quot;полным&quot; и вы получаете вердикт ОК.
+
+  Если решение &quot;падает&quot; на одном из тестов, то оно считается частичным и не засчитывается.</div><div class="msg msg_type_info" data-id="156967" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Эффективность решений</h6>Алгоритм, реализованный в вашей программе, должен иметь достаточную эффективность, чтобы пройти ограничения по времени и памяти.
+
+  Эффективность обычно оценивается в терминах &quot;большого О&quot; (встречается еще термин &quot;асимптотика&quot;).
+
+  Если вам незнакомы данные понятия, то советуем ознакомиться с ними и уточнить, сколько базовых операций в секунду в среднем может выполнять ваш язык программирования.
+</div><div class="msg msg_type_info" data-id="156966" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Итоговая оценка</h6>Задача считается решенной, если она решена полностью (прошла все тесты и получила вердикт ОК).
+
+  Любой другой вердикт не засчитывает задачу.</div><div class="msg msg_type_info" data-id="156965" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тесты НЕ из условия</h6>Все тесты, не предоставленные в условии, не доступны для просмотра участниками.
+
+  В то же время все эти тесты удовлетворяют всем ограничениям и другим гарантиям, указанным в разделе &quot;Формат входных данных&quot;.
+
+  Проверять данные гарантии в коде программы не нужно - это гарантия от авторов задач участникам. </div><div class="msg msg_type_info" data-id="156964" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тесты из условия</h6>Тесты, предоставленные в условии, совпадают с первыми тестами, на которых будет тестироваться ваша программа.
+
+  Если у вас ошибка на одном из этих тестов - у вас есть эти данные в условии, проверьте их.
+
+  Ответы на эти (и все остальные тесты) сгенерированы авторскими решениями и являются правильными.
+
+  К данным тестам есть пояснения, которые описывают получение каждого ответа на теста (с разной степенью детализации).</div><div class="msg msg_type_info" data-id="156962" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый ввод / вывод на С++</h6>При сомнениях в скорости ввода/вывода через cin/cout можете попробовать использовать следующее ускорение:
+
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+
+  (вызывается в начале выполнения программы)
+  Этот код отключает синхронизацию с printf/scanf и синхронизацию потоков cin/cout между собой.
+
+  Также напоминаем, что endl вызывает внутри себя flush, что может негативно сказаться на скорости выполнения работы программы (рекомендуется использовать &quot;\n&quot; при необходимости)</div><div class="msg msg_type_info" data-id="156961" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый вывод на языке Java</h6>В случае необходимости ускорения вывода можно использовать любой буферизованный вывод (PrintWriter / BufferedWriter). Единственное условие - не забудьте закрыть поток после вывода ^_^</div><div class="msg msg_type_info" data-id="156960" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый ввод на языке Java</h6>На больших объемах данных Scanner начинает проседать по производительности.
+
+  Рекомендуется рассмотреть возможность использования BufferedReader (возможно вам еще приглянется класс StringTokenizer).
+
+  Пример ввода с BufferedReader есть в справке Яндекс.Контеста</div><div class="msg msg_type_info" data-id="156959" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый вывод на языке Python</h6>Рекомендуется рассмотреть возможность вывода данных с помощью комбинации:
+  - сбор всех результирующих данных в один массив
+  - приведение элементов данного массива к строкам:
+  - &quot;скрепление&quot; данных строк с помощью функции &quot;join&quot; у выбранного разделителя
+
+  В качестве примера: вывод массива целых чисел &quot;ans&quot; в формате &quot;каждое число на новой строке&quot;:
+
+  ans_str = &quot;\n&quot;.join(map(str, ans))
+  print(ans_str)</div><div class="msg msg_type_info" data-id="156958" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Примеры ввода и вывода</h6>Обращаем ваше внимание, что примеры кода на различных языках для ввода / вывода из файла / консоли можно найти в справке к Яндекс.Контесту:
+
+  https://yandex.ru/support/contest/examples-stdin-stdout.html</div></div></div><button class="button button_theme_pseudo button_disabled_no button_pseudo_yes button_role_end button_size_s aside__button i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button"><span class="button__text">Завершить</span></button></div></div></div><ul class="tabs-menu tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_role_contest tabs-menu_type_stroked i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes tabs-menu__tab_active_yes"><a class="link" href="/contest/39459/problems/">Задачи</a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/submits/">Посылки</a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/messages/">Сообщения</a></li></ul><form class="problem problem_type_single problem_mode_one-button problem_contest-type_simple i-bem" data-bem="{&quot;problem&quot;:{}}" action="/contest/39459/submit/" method="POST" enctype="multipart/form-data"><fieldset class="problem__item"><div class="problem__statement text" data-bem="{&quot;problem__statement&quot;:{}}"><!DOCTYPE html
+  SYSTEM "html">
+  <div class="problem-statement">
+    <div class="header">
+      <h1 class="title">B. Через тернии к клиенту</h1>
+      <table>
+        <tr>
+          <th>Язык</th>
+          <th>Ограничение времени</th>
+          <th>Ограничение памяти</th>
+          <th>Ввод</th>
+          <th>Вывод</th>
+        </tr>
+        <tr>
+          <td width="1%">Все языки</td>
+          <td>1&nbsp;секунда</td>
+          <td>512Mb</td>
+          <td rowspan="7">стандартный ввод или input.txt</td>
+          <td rowspan="7">стандартный вывод или output.txt</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Python 3.7.3</nobr>
+          </td>
+          <td>4&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Python 3.7 (PyPy 7.3.3)</nobr>
+          </td>
+          <td>4&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Scala 2.13.4</nobr>
+          </td>
+          <td>5&nbsp;секунд</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>PHP 7.3.5</nobr>
+          </td>
+          <td>4&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>OpenJDK Java 15</nobr>
+          </td>
+          <td>5&nbsp;секунд</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Kotlin 1.5.32 (JRE 11)</nobr>
+          </td>
+          <td>5&nbsp;секунд</td>
+          <td>512Mb</td>
+        </tr>
+      </table>
+    </div>
+    <h2></h2>
+    <div class="legend"> Известная компания Тындекс идёт в ногу со временем — с началом активных космических перелётов в компании открылся сервис
+      Тындекс.Ракетакси: пользователю необходимо лишь указать координаты начала и конца перелёта, после чего за ним вылетит персональная
+      ракета. <!--l. 49-->
+      <p style="text-indent: 0em;">По сути любой заказ можно описать в виде событий четырёх типов: </p><ol style="list-style-type:
+      decimal;">
+        <li><span style="font-weight: bold;">A </span>(accepted) - заказ принят в работу (ракета вылетела за клиентом); </li>
+        <li><span style="font-weight: bold;">B </span>(boarding) - клиент сел в ракету; </li>
+        <li><span style="font-weight: bold;">S </span>(success) - заказ успешно завершён (клиент вышел на планете назначения); </li>
+        <li><span style="font-weight: bold;">C </span>(cancelled) - заказ отменён. </li>
+      </ol>
+      <!--l. 63-->
+      <p style="text-indent: 0em;">Все происходящие с ракетами события отправляются на сервера, где сразу логируются. Вот только
+        из-за проблем со связью (метеоритные потоки, вспышки на звездах и т.д.) отправка событий иногда затягивается, из-за чего записи
+        в получившемся логе могут идти не по порядку. <!--l. 65-->
+      </p><p style="text-indent: 0em;">Гарантируется, что все описанные в логе события задают один из следующих сценариев: </p><ol
+              style="list-style-type: decimal;">
+        <li><span style="font-weight: bold;">A </span>- <span style="font-weight: bold;">B </span>- <span style="font-weight: bold;">S</span></li>
+        <li><span style="font-weight: bold;">A </span>- <span style="font-weight: bold;">B </span>- <span style="font-weight: bold;">C</span></li>
+        <li><span style="font-weight: bold;">A </span>- <span style="font-weight: bold;">C</span></li>
+      </ol>
+      <!--l. 77-->
+      <p style="text-indent: 0em;">Вам, как главному аналитику (и по совместительству главному программисту) ракетопарка, необходимо
+        исследовать лог за прошедший год и определить для каждой ракеты суммарное время движения (в минутах) в течение заказов. <!--l.
+      79-->
+      </p><p style="text-indent: 0em;">В каждый момент времени ракета выполняет только один заказ. Будем считать, что каждая ракета
+        в каждый момент времени: </p><ul>
+        <li>или стоит на месте в ожидании заказа, </li>
+        <li>или перемещается по космосу, выполняя заказ. </li>
+      </ul>
+      <!--l. 89-->
+      <p style="text-indent: 0em;">Движение начинается после принятия заказа и завершается после отмены или завершения заказа. За
+        одну минуту не может произойти несколько событий, связанных с одной и той же ракетой. </p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+
+    </div>
+    <h2>Формат ввода</h2>
+    <div class="input-specification"> В первой строке дано целое число <!--l. 92--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math><!--l.
+      92--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>2</mn>
+      <mo>≤</mo> <mi>N</mi> <mo>≤</mo> <mn>2</mn><mn>0</mn><mn>0</mn><mspace width="0.3em"><mn>0</mn><mn>0</mn><mn>0</mn></mspace></mrow><mo>)</mo></mrow></math>
+      &nbsp;— количество записей в логе. <!--l. 94-->
+      <p style="text-indent: 0em;">Следующие <!--l. 94--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>
+        строк содержат записи в логе в формате <!--l. 94--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mi>a</mi><mi>y</mi><mspace
+                width="0.3em"><mi>h</mi><mi>o</mi><mi>u</mi><mi>r</mi><mspace width="0.3em"><mi>m</mi><mi>i</mi><mi>n</mi><mi>u</mi><mi>t</mi><mi>e</mi><mspace
+                width="0.3em"><mi>i</mi><mi>d</mi><mspace width="0.3em"><mi>s</mi><mi>t</mi><mi>a</mi><mi>t</mi><mi>u</mi><mi>s</mi></mspace></mspace></mspace></mspace></math>:
+      </p><ul>
+        <li>
+          <!--l. 98--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mi>a</mi><mi>y</mi></math><!--l.
+      98--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>1</mn>
+          <mo>≤</mo> <mi>d</mi> <mo>≤</mo> <mn>3</mn><mn>6</mn><mn>5</mn></mrow><mo>)</mo></mrow></math> &nbsp;— номер дня (сквозная
+          нумерация с начала календарного года); </li>
+        <li>
+          <!--l. 100--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>h</mi><mi>o</mi><mi>u</mi><mi>r</mi></math><!--l.
+      100--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>0</mn>
+          <mo>≤</mo> <mi>h</mi> <mo>&lt;</mo> <mn>2</mn><mn>4</mn></mrow><mo>)</mo></mrow></math> &nbsp;— часы; </li>
+        <li>
+          <!--l. 102--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi><mi>i</mi><mi>n</mi><mi>u</mi><mi>t</mi><mi>e</mi></math><!--l.
+      102--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>0</mn>
+          <mo>≤</mo> <mi>m</mi> <mo>&lt;</mo> <mn>6</mn><mn>0</mn></mrow><mo>)</mo></mrow></math> &nbsp;— минуты; </li>
+        <li>
+          <!--l. 104--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi><mi>d</mi></math><!--l.
+      104--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>0</mn>
+          <mo>≤</mo> <mi>i</mi><mi>d</mi> <mo>≤</mo> <mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>9</mn></mrow></msup></mrow><mo>)</mo></mrow></math>
+          &nbsp;— уникальный идентификатор ракеты; </li>
+        <li>
+          <!--l. 106--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mi>t</mi><mi>a</mi><mi>t</mi><mi>u</mi><mi>s</mi>
+          <mo>∈</mo><mrow><mo>{</mo><mrow><mstyle><mtext mathvariant="bold" style="font-weight: bold;">A</mtext></mstyle><mo>,</mo><mstyle><mtext
+                  mathvariant="bold" style="font-weight: bold;">B</mtext></mstyle><mo>,</mo><mstyle><mtext mathvariant="bold" style="font-weight:
+      bold;">S</mtext></mstyle><mo>,</mo><mstyle><mtext mathvariant="bold" style="font-weight: bold;">C</mtext></mstyle></mrow><mo>}</mo></mrow></math>
+          &nbsp;— буква, обозначающая тип события. </li>
+      </ul>
+      <p></p>
+
+    </div>
+    <h2>Формат вывода</h2>
+    <div class="output-specification"> В единственной строке выведите через пробел суммарное время движения на заказах для каждой упомянутой в логе ракеты. Данные
+      необходимо выводить в порядке возрастания идентификаторов ракет.
+    </div>
+    <h2>Пример</h2>
+    <table class="sample-tests">
+      <thead>
+      <tr>
+        <th>Ввод</th>
+        <th>Вывод</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><pre>8
+50 7 25 3632 A
+14 23 52 212372 S
+15 0 5 3632 C
+14 21 30 212372 A
+50 7 26 3632 C
+14 21 30 3632 A
+14 21 40 212372 B
+14 23 52 3632 B
+</pre></td>
+        <td><pre>156 142
+</pre></td>
+      </tr>
+      </tbody>
+    </table>
+    <h2>Примечания</h2>
+    <div class="notes"><span style="font-weight: bold;">Ракета №3632</span><ol style="list-style-type: decimal;">
+      <li>в 14-й день года в 21:30 получила заказ (шестая запись в логе); </li>
+      <li>забрала пассажира в 23:52 того же дня (восьмая запись в логе); </li>
+      <li>после чего заказ был отменён в 15-й день года в 00:05 (третья запись в логе); </li>
+      <li>в 50-й день года в 7:25 получила заказ (первая запись в логе); </li>
+      <li>заказ был отменён уже через минуту (четвёртая запись в логе).</li>
+    </ol>
+      <!--l. 124-->
+      <p style="text-indent: 0em;">Таким образом ракета №3632 провела в движении с 14-го дня 21:30 до 15-го дня 00:05 и с 50-го
+        дня 7:25 до 50-го дня 7:26 — всего <!--l. 124--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mn>5</mn><mn>6</mn></math>
+        минут. <!--l. 126-->
+      </p><p style="text-indent: 0em;"><span style="font-weight: bold;">Ракета №212372</span></p><ol style="list-style-type: decimal;">
+        <li>в 14-й день года в 21:30 получила заказ (третья запись в логе); </li>
+        <li>через 10 минут забрала пассажира (седьмая запись в логе); </li>
+        <li>в 23:52 прибыла на место назначения (вторая запись в логе).</li>
+      </ol>
+      <!--l. 134-->
+      <p style="text-indent: 0em;">Всего ракета №212372 провела в движении с 14-го дня 21:30 до 14-го дня 23:52 — <!--l. 134--><math
+              display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mn>4</mn><mn>2</mn></math>
+        минуты. </p>
+      <p></p>
+      <p></p>
+
+    </div>
+  </div></div><a name="998/2022_08_08/u0aXPEkxQO"></a><div class="problem__messages"><div class="msg msg_type_play"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/>Ваше решение успешно отправлено</div><div class="problem__available-message"></div></div><div class="problem__solution"><div class="solution solution_type_compiler-list i-bem" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;998/2022_08_08/u0aXPEkxQO@compilerId&quot;,&quot;problemId&quot;:&quot;998/2022_08_08/u0aXPEkxQO&quot;,&quot;compilerId&quot;:&quot;openjdk15&quot;,&quot;maxFileSize&quot;:262144,&quot;validation&quot;:{}}}"><label class="solution__label" for="998/2022_08_08/u0aXPEkxQO@compilerId">Язык</label><span class="select select_size_s select_theme_normal select_role_compiler-list select_layout_fixed-l i-bem" data-bem="{&quot;select&quot;:{&quot;rows&quot;:8,&quot;live&quot;:true,&quot;selected&quot;:&quot;openjdk15&quot;}}"><button class="button button_theme_normal button_arrow_down button_size_s select__button i-bem" data-bem="{&quot;button&quot;:{}}" role="listbox" type="button" aria-haspopup="true" aria-expanded="false"><span class="button__text">OpenJDK Java 15</span></button><select class="select__control" name="998/2022_08_08/u0aXPEkxQO@compilerId" id="uniq16619099011079336" tabindex="-1" aria-hidden="true" autocomplete="off" value="openjdk15"><option class="select__option" value="gcc_cpp20">GNU C++20 10.2</option><option class="select__option" value="golang_docker">Golang 1.16</option><option class="select__option" value="kotlin_1_5_0">Kotlin 1.5.32 (JRE 11)</option><option class="select__option" value="openjdk15" selected="selected">OpenJDK Java 15</option><option class="select__option" value="php7_3_5">PHP 7.3.5</option><option class="select__option" value="pypy3_7_1_0">Python 3.7 (PyPy 7.3.3)</option><option class="select__option" value="scala_docker">Scala 2.13.4</option></select></span></div><div class="solution solution_type_group solution_selected_text i-bem" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;998/2022_08_08/u0aXPEkxQO@solution&quot;,&quot;problemId&quot;:&quot;998/2022_08_08/u0aXPEkxQO&quot;,&quot;compilerId&quot;:&quot;openjdk15&quot;,&quot;maxFileSize&quot;:262144}}"><div class="solution__field solution__field_role_switcher"><span class="radio-button radio-button_size_s radio-button_theme_normal i-bem" data-bem="{&quot;radio-button&quot;:{&quot;live&quot;:false}}"><label class="radio-button__radio radio-button__radio_checked_yes radio-button__radio_pressed_yes radio-button__radio_side_left" for="uniq16619099011079337"><input class="radio-button__control" value="text" checked="checked" id="uniq16619099011079337" type="radio" name="998/2022_08_08/u0aXPEkxQO@solution"/><span class="radio-button__text">Набрать здесь</span></label><label class="radio-button__radio radio-button__radio_side_right radio-button__radio_next-for-pressed_yes" for="uniq16619099011079338"><input class="radio-button__control" value="file" id="uniq16619099011079338" type="radio" name="998/2022_08_08/u0aXPEkxQO@solution"/><span class="radio-button__text">Отправить файл</span></label></span></div><div class="solution__field solution__field_role_panes"><div class="solution__pane solution__pane_name_text"><span class="input input_type_textarea input_size_s input_disabled_yes input_role_code-type-text input_theme_normal i-bem" data-bem="{&quot;input&quot;:{&quot;live&quot;:false}}"><span class="input__box"><textarea class="input__control" id="uniq16619099011079339" name="998/2022_08_08/u0aXPEkxQO@text" disabled="disabled" aria-labelledby="labeluniq16619099011079339 hintuniq16619099011079339" rows="8" cols="10">import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class RocketTaxi {
+    private static final String DELIMITER = " ";
+
+    private static void RocketTaxi() throws IOException, ParseException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        Set&lt;Integer&gt; rockets = new HashSet&lt;&gt;();
+
+        Map&lt;Integer, Integer&gt; values = new TreeMap&lt;&gt;();
+
+        List&lt;String&gt; logs = new ArrayList&lt;&gt;();
+
+        int logsQuantity = Integer.parseInt(reader.readLine());
+
+        for (int logNumber = 0; logNumber &lt; logsQuantity; logNumber++) {
+            String logInfo = reader.readLine();
+            rockets.add(Integer.parseInt(logInfo.split(DELIMITER)[3]));
+            logs.add(logInfo);
+        }
+        List&lt;List&lt;String&gt;&gt; logsPerRocket = new ArrayList&lt;&gt;();
+
+        for (int rocket = 0; rocket &lt; rockets.size(); rocket++) {
+            int finalRocket = rocket;
+            logsPerRocket.add(
+                    logs.stream()
+                            .filter(str -&gt; str.contains(" " + rockets.toArray()[finalRocket] + " "))
+                            .collect(Collectors.toList()));
+        }
+
+        for(int rocket = 0; rocket &lt; logsPerRocket.size(); rocket++){
+            List&lt;String&gt; currentRocket = new ArrayList&lt;&gt;(logsPerRocket.get(rocket));
+
+            currentRocket.sort(Comparator
+                    .comparingInt((String o) -&gt; Integer.parseInt(o.split(DELIMITER)[0]))
+                    .thenComparing((String o) -&gt; Integer.parseInt(o.split(DELIMITER)[1]))
+                    .thenComparing((String o) -&gt; Integer.parseInt(o.split(DELIMITER)[2])));
+
+            int totalMinutes = 0, startMinutes = 0;
+
+            for(String log : currentRocket){
+                String[] logSplit =  log.split(DELIMITER);
+                switch(logSplit[4]){
+                    case "A" -&gt; startMinutes = Integer.parseInt(logSplit[0]) * 1440 + Integer.parseInt(logSplit[1]) * 60 + Integer.parseInt(logSplit[2]);
+                    case "S", "C" -&gt; totalMinutes += (Integer.parseInt(logSplit[0]) * 1440
+                            + Integer.parseInt(logSplit[1]) * 60
+                            + Integer.parseInt(logSplit[2])) - startMinutes;
+                }
+
+            }
+            values.put(Integer.parseInt(currentRocket.get(0).split(DELIMITER)[3]), totalMinutes);
+        }
+        for (int value:
+             values.values()) {
+            System.out.print(value + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            RocketTaxi();
+        } catch (IOException | ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
+</textarea><span class="input__clear input__clear_visibility_visible" unselectable="on"></span></span></span></div><div class="solution__pane solution__pane_name_file"><span class="attach attach_theme_normal attach_size_s attach_disabled_yes attach_role_code-type-attach attach_for_contest i-bem" data-bem="{&quot;attach&quot;:{&quot;live&quot;:false}}"><span class="button button_theme_normal button_size_s button_disabled_yes attach__button i-bem" data-bem="{&quot;button&quot;:{}}"><span class="button__text" id="textuniq16619099011079340" aria-hidden="true">Выбрать</span><input class="attach__control button__control" type="file" name="998/2022_08_08/u0aXPEkxQO@file" id="uniq16619099011079340" aria-labelledby="textuniq16619099011079340" disabled="disabled"/></span><span class="attach__holder attach__holder_state_hidden" aria-hidden="true"><img class="image attach__icon-file" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="attach__text">Файл не выбран</span><img class="image attach__reset" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/></span></span></div></div></div></div></fieldset><div class="problem__send"><input type="hidden" name="sk" value="uc5986e46c6e1a40707b62badbfc4bd30"/><input type="hidden" name="retpath" value="https://contest.yandex.ru/contest/39459/problems/B/#998/2022_08_08/u0aXPEkxQO"/><button class="button button_theme_action button_size_s button_role_submit i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="submit"><span class="button__text">Отправить</span></button></div><div class="problem__attempts"><div class="msg msg_type_info"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/>осталось 97 попыток</div></div><div class="problem__problems-nav"><span class="problem__problems-nav-left"><a class="button button_theme_normal button_size_s i-bem" data-bem="{&quot;button&quot;:{}}" role="button" href="/contest/39459/problems/A/"><span class="button__text">Предыдущая</span></a></span><span class="problem__problems-nav-right"><a class="button button_theme_normal button_size_s i-bem" data-bem="{&quot;button&quot;:{}}" role="button" href="/contest/39459/problems/C/"><span class="button__text">Следующая</span></a></span></div></form><ul class="tabs-menu tabs-menu_theme_normal tabs-menu_layout_vert tabs-menu_size_m tabs-menu_role_problems inline-block i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="/contest/39459/problems/A/"><span class="tabs-menu__tab-content-text">A. Хитрый шифр</span><div class="submit-status submit-status_size_small submit-status_verdict_OK submit-status_mood_success popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="OK"><a class="link image image_type_success" href="/contest/39459/run-report/69892284/">&amp;nbsp;</a></div></a></li><li class="tabs-menu__tab tabs-menu__tab_active_yes"><a class="link" href="/contest/39459/problems/B/"><span class="tabs-menu__tab-content-text">B. Через тернии к клиенту</span><div class="submit-status submit-status_size_small submit-status_verdict_unknown submit-status_mood_none popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Тестируется"><a class="link" href="/contest/39459/run-report/69893135/">?</a></div></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/C/"><span class="tabs-menu__tab-content-text">C. Приснится же такое...</span></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/D/"><span class="tabs-menu__tab-content-text">D. Лей, лей, не жалей</span></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/E/"><span class="tabs-menu__tab-content-text">E. Занимательная алхимия</span></a></li></ul><div class="table__hook"><table class="table table_role_submits i-bem" data-bem="{&quot;table&quot;:{&quot;isHelloBoardContest&quot;:false,&quot;ajax&quot;:{&quot;noProblemsLinks&quot;:true},&quot;done&quot;:false}}"><thead class="table__head"><tr class="table__row"><th class="table__header">Время посылки</th><th class="table__header">ID</th><th class="table__header">Задача</th><th class="table__header">Компилятор</th><th class="table__header">Вердикт</th><th class="table__header">Тип посылки</th><th class="table__header">Время</th><th class="table__header">Память</th><th class="table__header">Тест</th><th class="table__header">Баллы</th><th class="table__header"></th></tr></thead><tbody class="table__body"><tr class="table__row"><td class="table__cell"><div class="table__data table__data_type_time"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661984733000}}"></time></div></td><td class="table__cell">69893135</td><td class="table__cell"><div class="table__data popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Через тернии к клиенту">B</div></td><td class="table__cell">OpenJDK Java 15</td><td class="table__cell"><div class="table__data"><div class="spin2 spin2_size_xxs spin2_progress_yes"></div><a class="link" href="/contest/39459/run-report/69893135/">Тестируется</a></div></td><td class="table__cell">-</td><td class="table__cell">-</td><td class="table__cell">-</td><td class="table__cell">10</td><td class="table__cell">-</td><td class="table__cell"><div class="table__data"><a class="link" href="/contest/39459/run-report/69893135/">отчёт</a></div></td></tr><tr class="table__row"><td class="table__cell"><div class="table__data table__data_type_time"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661983629000}}"></time></div></td><td class="table__cell">69893039</td><td class="table__cell"><div class="table__data popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Через тернии к клиенту">B</div></td><td class="table__cell">OpenJDK Java 15</td><td class="table__cell"><div class="table__data table__data_mood_neg popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Неверный ответ"><a class="link" href="/contest/39459/run-report/69893039/">WA</a></div></td><td class="table__cell">-</td><td class="table__cell"><div class="table__data table__data_type_time">303ms</div></td><td class="table__cell"><div class="table__data table__data_type_time">14.66Mb</div></td><td class="table__cell">9</td><td class="table__cell">-</td><td class="table__cell"><div class="table__data"><a class="link" href="/contest/39459/run-report/69893039/">отчёт</a></div></td></tr><tr class="table__row"><td class="table__cell"><div class="table__data table__data_type_time"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661983529000}}"></time></div></td><td class="table__cell">69893028</td><td class="table__cell"><div class="table__data popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Через тернии к клиенту">B</div></td><td class="table__cell">OpenJDK Java 15</td><td class="table__cell"><div class="table__data table__data_mood_neg popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Ошибка при компиляции"><a class="link" href="/contest/39459/run-report/69893028/">CE</a></div></td><td class="table__cell">-</td><td class="table__cell"><div class="table__data table__data_type_time">0ms</div></td><td class="table__cell"><div class="table__data table__data_type_time">0B</div></td><td class="table__cell">-</td><td class="table__cell">-</td><td class="table__cell"><div class="table__data"><a class="link" href="/contest/39459/run-report/69893028/">отчёт</a></div></td></tr></tbody></table></div></div></div><div class="page__foot"><div class="footer clearfix" role="contentinfo"><div class="footer__column"><a class="link footer__link" href="//yandex.ru/support/contest/index.html">Справка</a><a class="link footer__link" href="//yandex.ru/support/contest/troubleshooting.xml?form1580-cntst_link=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F39459%2Fproblems%2FB%2F%3Fsuccess%3D69893135&amp;form1580-cntst_login=Vadim%20Kuznetsov">Обратная связь</a><a class="link footer__link" href="https://yandex.ru/legal/contest_termsofuse/">Пользовательское соглашение</a></div><div class="footer__column footer__column_side_right"><div class="copyright">&copy;&nbsp;2013&ndash;2022&nbsp;&nbsp;ООО «<a class="copyright__link footer__link" href="http://www.yandex.ru">Яндекс</a>»</div></div></div></div><i class="b-statcounter"><i class="b-statcounter__metrika b-statcounter__metrika_type_js i-bem" data-bem="{&quot;b-statcounter__metrika&quot;:{&quot;id&quot;:16150693}}"><noscript><img alt="" src="//mc.yandex.ru/watch/16150693"/></noscript></i></i></body></html>
