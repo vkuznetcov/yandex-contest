@@ -1,0 +1,420 @@
+
+<!DOCTYPE html><html class="i-ua_js_no i-ua_css_standard" lang="ru"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>D. Лей, лей, не жалей — Стажировка осень-зима 2022: бэкенд — Яндекс.Контест</title><link rel="shortcut icon" href="/favicon.ico?1661985096199"/><script nonce="NGsfiQGqs0Xnnd9xhiHsWw==">;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);;(function(d,e,c,n,w,v,f){e=d.documentElement;c="className";n="createElementNS";f="firstChild";w="http://www.w3.org/2000/svg";e[c]+=" i-ua_svg_"+(!!d[n]&&!!d[n](w,"svg").createSVGRect?"yes":"no");v=d.createElement("div");v.innerHTML="<svg/>";e[c]+=" i-ua_inlinesvg_"+((v[f]&&v[f].namespaceURI)==w?"yes":"no");})(document);;(function(d,e,p){e=d.documentElement;p="placeholder";e.className+=" i-ua_"+p+(p in d.createElement("input")?"_yes":"_no")})(document);</script><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/highlighter/highlighter.css"/><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.css"/><!--[if IE 6]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie6.css"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie7.css"/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie8.css"/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie9.css"/><![endif]--><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.print.css" media="print"/><script src="//yastatic.net/jquery/1.8.3/jquery.min.js" nonce="1OYzEQq9KQORsc2xGvI9Fw=="></script><script src="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ru.js" nonce="NGsfiQGqs0Xnnd9xhiHsWw=="></script><meta name="description" content="Яндекс.Контест это сервис, позволяющий программистам со всего мира соревноваться на предложенных задачах, а преподавателям и авторам задач -- размещать задания и серии заданий и предоставлять доступ пользователям через интернет."/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://yastatic.net/s3/contest/katex/v0.13.0/katex.min.css"/><script nonce="NGsfiQGqs0Xnnd9xhiHsWw==">window.MathJax = { AssistiveMML: { disabled: true }, showMathMenu: false };</script><script src="//yandex.st/contest/mathjax/MathJax.js?config=MML_CHTML" nonce="NGsfiQGqs0Xnnd9xhiHsWw=="></script><script src="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/highlighter/highlighter.js" nonce="NGsfiQGqs0Xnnd9xhiHsWw=="></script></head><body class="b-page b-page__body i-global i-ua i-ua_interaction_yes page i-bem" data-bem="{&quot;i-global&quot;:{&quot;lang&quot;:&quot;ru&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;content-region&quot;:&quot;ru&quot;,&quot;click-host&quot;:&quot;//clck.yandex.ru&quot;,&quot;passport-host&quot;:&quot;https://passport.yandex.ru&quot;,&quot;pass-host&quot;:&quot;pass.yandex.ru&quot;,&quot;social-host&quot;:&quot;social.yandex.ru&quot;,&quot;export-host&quot;:&quot;https://export.yandex.ru&quot;,&quot;login&quot;:&quot;vkuznetcov48&quot;,&quot;lego-static-host&quot;:&quot;//yastatic.net/lego/2.10-142&quot;,&quot;id&quot;:&quot;contest&quot;,&quot;displayName&quot;:&quot;Vadim Kuznetsov&quot;,&quot;yandexuid&quot;:&quot;2503087131659277826&quot;,&quot;social-retpath&quot;:&quot;https://contest.yandex.ru/i-social__closer.html&quot;,&quot;retpath&quot;:&quot;http://contest.yandex.ru/contest/39459/problems/D/&quot;,&quot;passport-msg&quot;:&quot;contest&quot;},&quot;i-ua&quot;:{},&quot;page&quot;:{}}"><div class="page__head island"><div class="banners"></div><div class="header layout layout_type_serp i-bem" data-bem="{&quot;header&quot;:{}}" role="banner"><div class="header__main"><div class="layout__col layout__col_size_3 header__logo"><div class="logo2 logo2_lang_ru"><a class="logo2__yandex" href="//www.yandex.ru"><div class="logo2__text">Яндекс</div></a><a class="logo2__service" href="/"><div class="logo2__text">Контест</div></a></div></div><div class="layout__col header__nav"><div class="dropdown-menu dropdown-menu_theme_ffffff lang-switcher inline-block i-bem" data-bem="{&quot;dropdown-menu&quot;:{},&quot;lang-switcher&quot;:{&quot;tune&quot;:&quot;http://tune.yandex.ru&quot;}}"><span class="lang-switcher__lang lang-switcher__lang_selected_yes link link_pseudo_yes dropdown-menu__switcher i-bem" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup lang-switcher__popup-content dropdown-menu__popup"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><span class="lang-switcher__lang lang-switcher__lang_selected_yes"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><a class="lang-switcher__lang" data-bem="{&quot;lang-switcher__lang&quot;:{&quot;lang&quot;:&quot;en&quot;,&quot;url&quot;:&quot;http://contest.yandex.ru/contest/39459/problems/D/?lang=en&quot;}}" href="http://contest.yandex.ru/contest/39459/problems/D/?lang=en" role="button" tabindex="0"><div class="country-flag country-flag_s16_gb lang-switcher__flag"></div><span class="lang-switcher__lang-name">Английский</span></a></li><li class="b-menu-vert__layout-unit lang-switcher__all"><a class="link" href="http://tune.yandex.ru/lang/">Ещё</a></li></ul></div></div></div></div><div class="dropdown-menu dropdown-menu_user_yes dropdown-menu_theme_ffffff i-bem" data-bem="{&quot;dropdown-menu&quot;:{}}"><a class="user user_menu_yes user_contest_yes i-bem" data-bem="{&quot;user&quot;:{&quot;domikMods&quot;:{&quot;logo&quot;:&quot;ru&quot;},&quot;url&quot;:&quot;https://passport.yandex.ru/auth?origin=contest&amp;retpath=http://contest.yandex.ru/contest/39459/problems/D/&quot;}}" href="https://passport.yandex.ru/passport?mode=passport" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"><span class="user__name" data-bem="{&quot;user__name&quot;:{&quot;maxLength&quot;:16,&quot;maxLengthRelative&quot;:3,&quot;isUglyUserName&quot;:false}}"><span class="user__first-letter">V</span>adim Kuznetsov</span></a><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup popup popup_fade-out_no popup_watch-scroll_no dropdown-menu__popup dropdown-menu__popup_user_yes i-bem" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:&quot;bottom-right&quot;}}"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru"><img class="image image_icon_mail" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="link__text user-menu-update i-bem" data-bem="{&quot;user-menu-update&quot;:{}}">Нет новых писем</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru/compose">Написать письмо</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://disk.yandex.ru?source=main-loginmenu"><img class="image image_icon_disk" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="link__text">Мой Диск</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item b-menu-vert__item_separator_yes" role="menuitem"></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="http://tune.yandex.ru">Настройка</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://passport.yandex.ru">Паспорт</a></div></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><div class="b-menu-vert__item" role="menuitem"><a class="link user user__logout i-bem" data-bem="{&quot;user&quot;:{&quot;_uniqId&quot;:&quot;user__logout&quot;}}" href="https://passport.yandex.ru/passport?mode=logout&amp;yu=2503087131659277826&amp;retpath=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F39459%2Fproblems%2FD%2F">Выйти</a></div></li></ul></div></div></div></div></div></div></div><ul class="tabs-menu tabs-menu_role_sections tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_type_stroked i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><div class="tabs-menu__inner"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="/contest/3/enter/">Пробный контест</a></li><li class="tabs-menu__tab"><a class="link" href="/contest-list/">Архив соревнований</a></li><li class="tabs-menu__tab"><a class="link" href="/compilers/">Настройки компиляторов</a></li><li class="tabs-menu__tab"><a class="link" href="/errors/">Значения ошибок</a></li><li class="tabs-menu__tab"><a class="link" href="/teams/">Команды</a></li></div></ul></div><div class="page__main page__sect"><div class="content content_theme_contest island"><div class="contest-head"><div class="contest-head__item contest-head__item_role_title"><a class="link" href="/contest/39459/enter/?retPage=">Стажировка осень-зима 2022: бэкенд</a></div><div class="contest-head__item contest-head__item_role_status"><div class="status i-bem" data-bem="{&quot;status&quot;:{&quot;finishTime&quot;:1661991116000}}"><div class="status__props"><div class="status__prop"><div class="status__name inline-block"><img class="image image_type_clock" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/></div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661985096020}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">старт:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661973116000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">финиш:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661991116000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">до финиша:</div><div class="status__value inline-block"><div class="countdown i-bem" data-bem="{&quot;countdown&quot;:{&quot;name&quot;:&quot;refresh-timer&quot;,&quot;duration&quot;:6019980}}"></div></div></div></div><div class="status__props"><div class="snippet snippet_hidden_yes status__snippet i-bem" data-bem="{&quot;snippet&quot;:{}}" id=":hidden-info:hidden-status"><div class="snippet__content"><div class="snippet__props"><div class="status__prop"><div class="status__name inline-block">начало:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661288400000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">длительность:</div><div class="status__value inline-block">05:00:00</div></div></div></div></div><span class="link link_pseudo_yes link_role_hidden-info i-bem" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0" id=":hidden-status"><span class="link__inner">...</span></span></div></div></div><div class="contest-head__item contest-head__item_role_aside"><div class="aside i-bem" data-bem="{&quot;aside&quot;:{&quot;sk&quot;:&quot;uc5986e46c6e1a40707b62badbfc4bd30&quot;,&quot;contestId&quot;:&quot;39459&quot;}}"><button class="button button_theme_pseudo button_pseudo_yes button_role_clarifications button_size_s aside__button i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button"><span class="button__text">Объявления жюри</span></button><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_role_message-box i-bem" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;offset&quot;:{&quot;top&quot;:10}}}}"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="popup__helper"></div><div class="msg msg_type_info" data-id="157194" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Недоступность внешних библиотек (numpy, pandas, boost и др.)</h6>Для использования доступны лишь библиотеки / модули, входящие в стандартную сборку указанного компилятора.
+
+    Внешние библиотеки (которые необходимо устанавливать отдельно) НЕДОСТУПНЫ для использования в программе.
+
+    Примерами таких НЕДОСТУПНЫХ библиотек являются:
+    - numpy
+    - pandas
+    - boost</div><div class="msg msg_type_info" data-id="156978" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Показ вердиктов за частичные решения</h6>Мы исправили отображение вердиктов - теперь вы увидите не только номер теста, на котором ваше решение валится, но и вердикт, который ему поставила система.</div><div class="msg msg_type_info" data-id="156975" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Вердикты TL и ML и использованные ресурсы</h6>Если вы получаете вердикты TL / ML, то вы можете увидеть рядом с вердиктом время / память, очень близкие к указанным в задаче.
+
+    К примеру, вы можете увидеть TL (2.005 сек) при ограничении в 2 секунды.
+
+    Это НЕ значит, что ваша программа работала всего лишь на 0.005 секунд дольше.
+
+    Это значит, что вашу программу ОСТАНОВИЛИ через 0.005 секунд после выхода за ограничения по времени.
+
+    Мы постарались выставить ограничения таким образом, чтобы корректное решение без каких-либо специфических НЕАСИМПТОТИЧЕСКИХ оптимизаций (кроме оптимизаций ввода/вывода, указанных в других оповещениях) проходило примерно за половину выделенных времени и памяти.</div><div class="msg msg_type_info" data-id="156972" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Возможные вердикты</h6>- OK - задача зачтена.
+    Если вы получили по задаче ОК, то его не уже не отнимут, даже если вы перепошлете на ту же задачу неверное решение.
+
+    - CE - compilation error - ошибка компиляции. Вы можете просмотреть ошибку, выдаваемую компилятором.
+
+    - WA - wrong answer - неправильный ответ
+    - RE - runtime error - ошибка исполнения (деление на ноль, выход за границу массива и т.д.)
+    - TL - time limit - превышено ограничение по времени (на тест)
+    - ML - memory limit - превышено ограничение по памяти (на тест)
+    - PE - presentation error - частный случай WA, когда вывод в несовпадающем с ожидаемым формате
+    - и т.д.</div><div class="msg msg_type_info" data-id="156971" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тестирование решений</h6>Решения тестируются по очереди на представленных в системе тестах (тесты из условия являются их частью).
+
+    Если решение проходит все тесты - оно считается &quot;полным&quot; и вы получаете вердикт ОК.
+
+    Если решение &quot;падает&quot; на одном из тестов, то оно считается частичным и не засчитывается.</div><div class="msg msg_type_info" data-id="156967" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Эффективность решений</h6>Алгоритм, реализованный в вашей программе, должен иметь достаточную эффективность, чтобы пройти ограничения по времени и памяти.
+
+    Эффективность обычно оценивается в терминах &quot;большого О&quot; (встречается еще термин &quot;асимптотика&quot;).
+
+    Если вам незнакомы данные понятия, то советуем ознакомиться с ними и уточнить, сколько базовых операций в секунду в среднем может выполнять ваш язык программирования.
+</div><div class="msg msg_type_info" data-id="156966" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Итоговая оценка</h6>Задача считается решенной, если она решена полностью (прошла все тесты и получила вердикт ОК).
+
+    Любой другой вердикт не засчитывает задачу.</div><div class="msg msg_type_info" data-id="156965" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тесты НЕ из условия</h6>Все тесты, не предоставленные в условии, не доступны для просмотра участниками.
+
+    В то же время все эти тесты удовлетворяют всем ограничениям и другим гарантиям, указанным в разделе &quot;Формат входных данных&quot;.
+
+    Проверять данные гарантии в коде программы не нужно - это гарантия от авторов задач участникам. </div><div class="msg msg_type_info" data-id="156964" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тесты из условия</h6>Тесты, предоставленные в условии, совпадают с первыми тестами, на которых будет тестироваться ваша программа.
+
+    Если у вас ошибка на одном из этих тестов - у вас есть эти данные в условии, проверьте их.
+
+    Ответы на эти (и все остальные тесты) сгенерированы авторскими решениями и являются правильными.
+
+    К данным тестам есть пояснения, которые описывают получение каждого ответа на теста (с разной степенью детализации).</div><div class="msg msg_type_info" data-id="156962" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый ввод / вывод на С++</h6>При сомнениях в скорости ввода/вывода через cin/cout можете попробовать использовать следующее ускорение:
+
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    (вызывается в начале выполнения программы)
+    Этот код отключает синхронизацию с printf/scanf и синхронизацию потоков cin/cout между собой.
+
+    Также напоминаем, что endl вызывает внутри себя flush, что может негативно сказаться на скорости выполнения работы программы (рекомендуется использовать &quot;\n&quot; при необходимости)</div><div class="msg msg_type_info" data-id="156961" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый вывод на языке Java</h6>В случае необходимости ускорения вывода можно использовать любой буферизованный вывод (PrintWriter / BufferedWriter). Единственное условие - не забудьте закрыть поток после вывода ^_^</div><div class="msg msg_type_info" data-id="156960" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый ввод на языке Java</h6>На больших объемах данных Scanner начинает проседать по производительности.
+
+    Рекомендуется рассмотреть возможность использования BufferedReader (возможно вам еще приглянется класс StringTokenizer).
+
+    Пример ввода с BufferedReader есть в справке Яндекс.Контеста</div><div class="msg msg_type_info" data-id="156959" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый вывод на языке Python</h6>Рекомендуется рассмотреть возможность вывода данных с помощью комбинации:
+    - сбор всех результирующих данных в один массив
+    - приведение элементов данного массива к строкам:
+    - &quot;скрепление&quot; данных строк с помощью функции &quot;join&quot; у выбранного разделителя
+
+    В качестве примера: вывод массива целых чисел &quot;ans&quot; в формате &quot;каждое число на новой строке&quot;:
+
+    ans_str = &quot;\n&quot;.join(map(str, ans))
+    print(ans_str)</div><div class="msg msg_type_info" data-id="156958" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Примеры ввода и вывода</h6>Обращаем ваше внимание, что примеры кода на различных языках для ввода / вывода из файла / консоли можно найти в справке к Яндекс.Контесту:
+
+    https://yandex.ru/support/contest/examples-stdin-stdout.html</div></div></div><button class="button button_theme_pseudo button_disabled_no button_pseudo_yes button_role_end button_size_s aside__button i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button"><span class="button__text">Завершить</span></button></div></div></div><ul class="tabs-menu tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_role_contest tabs-menu_type_stroked i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes tabs-menu__tab_active_yes"><a class="link" href="/contest/39459/problems/">Задачи</a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/submits/">Посылки</a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/messages/">Сообщения</a></li></ul><form class="problem problem_type_single problem_mode_one-button problem_contest-type_simple i-bem" data-bem="{&quot;problem&quot;:{}}" action="/contest/39459/submit/" method="POST" enctype="multipart/form-data"><fieldset class="problem__item"><div class="problem__statement text" data-bem="{&quot;problem__statement&quot;:{}}"><!DOCTYPE html
+    SYSTEM "html">
+    <div class="problem-statement">
+        <div class="header">
+            <h1 class="title">D. Лей, лей, не жалей</h1>
+            <table>
+                <tr>
+                    <th>Язык</th>
+                    <th>Ограничение времени</th>
+                    <th>Ограничение памяти</th>
+                    <th>Ввод</th>
+                    <th>Вывод</th>
+                </tr>
+                <tr>
+                    <td width="1%">Все языки</td>
+                    <td>3&nbsp;секунды</td>
+                    <td>512Mb</td>
+                    <td rowspan="7">стандартный ввод или input.txt</td>
+                    <td rowspan="7">стандартный вывод или output.txt</td>
+                </tr>
+                <tr>
+                    <td>
+                        <nobr>Python 3.7.3</nobr>
+                    </td>
+                    <td>10&nbsp;секунд</td>
+                    <td>512Mb</td>
+                </tr>
+                <tr>
+                    <td>
+                        <nobr>Python 3.7 (PyPy 7.3.3)</nobr>
+                    </td>
+                    <td>6&nbsp;секунд</td>
+                    <td>512Mb</td>
+                </tr>
+                <tr>
+                    <td>
+                        <nobr>Scala 2.13.4</nobr>
+                    </td>
+                    <td>6&nbsp;секунд</td>
+                    <td>512Mb</td>
+                </tr>
+                <tr>
+                    <td>
+                        <nobr>OpenJDK Java 15</nobr>
+                    </td>
+                    <td>6&nbsp;секунд</td>
+                    <td>512Mb</td>
+                </tr>
+                <tr>
+                    <td>
+                        <nobr>PHP 7.3.5</nobr>
+                    </td>
+                    <td>6&nbsp;секунд</td>
+                    <td>512Mb</td>
+                </tr>
+                <tr>
+                    <td>
+                        <nobr>Kotlin 1.5.32 (JRE 11)</nobr>
+                    </td>
+                    <td>6&nbsp;секунд</td>
+                    <td>512Mb</td>
+                </tr>
+            </table>
+        </div>
+        <h2></h2>
+        <div class="legend"> В известной компании Тындекс уже несколько лет работает очень популярный сервис Тындекс.Вода, занимающийся поливом людей,
+            растений, зданий и всего остального, что можно полить без ущерба окружающим. <!--l. 49-->
+            <p style="text-indent: 0em;">Пользователь указывает, что ему необходимо полить и сколько литров воды он готов на это потратить,
+                после чего на место выезжает специальная бригада. В итоге для компании каждый заказ можно представить тройкой чисел: </p><ul>
+                <li>время <!--l. 53--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi></math>,
+                    когда бригада приняла заказ и выехала; </li>
+                <li>время <!--l. 54--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>E</mi><mi>n</mi><mi>d</mi></math>,
+                    когда бригада осуществила заказ и освободилась; </li>
+                <li>итоговая стоимость заказа <!--l. 55--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi></math>.
+                </li>
+            </ul>
+            <!--l. 59-->
+            <p style="text-indent: 0em;">Для простоты обработки и хранения время задается одним целым числом, равным количеству минут,
+                прошедших с начала запуска сервиса до искомого момента. <!--l. 61-->
+            </p><p style="text-indent: 0em;"><span style="font-weight: bold;">Продолжительность заказа </span>считается равной величине
+                <!--l. 61--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>E</mi><mi>n</mi><mi>d</mi>
+                    <mo>−</mo> <mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi></math>. <!--l. 63-->
+            </p><p style="text-indent: 0em;">Начальнику сервиса необходимо отчитаться перед вышестоящим начальством, поэтому он поручил
+                вам несложную задачку — найти ответы на несколько запросов одного из двух типов: </p><ol style="list-style-type: decimal;">
+                <li>Найти суммарную стоимость заказов, которые начались в заданный промежуток времени; </li>
+                <li>Найти суммарную продолжительность заказов, которые завершились в заданный промежуток времени; </li>
+            </ol>
+            <!--l. 72-->
+            <p style="text-indent: 0em;">В обеих статистиках промежутки считаются <span style="font-weight: bold;">отрезками</span>: в
+                промежуток от <!--l. 72--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi></math>
+                до <!--l. 72--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>E</mi><mi>n</mi><mi>d</mi></math>
+                входят все величины <!--l. 72--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi></math>,
+                <!--l. 72--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi>
+                    <mo>+</mo> <mn>1</mn></math>, <!--l. 72--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mo>…</mo><mspace
+                        width="0.3em"></mspace></math>, <!--l. 72--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>E</mi><mi>n</mi><mi>d</mi>
+                    <mo>−</mo> <mn>1</mn></math>, <!--l. 72--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>E</mi><mi>n</mi><mi>d</mi></math>.
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </div>
+        <h2>Формат ввода</h2>
+        <div class="input-specification"> В первой строке расположено одно целое число <!--l. 75--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>
+            (<!--l. 75--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo>≤</mo>
+                <mi>N</mi> <mo>≤</mo> <mn>2</mn><mn>0</mn><mn>0</mn><mspace width="0.3em"><mn>0</mn><mn>0</mn><mn>0</mn></mspace></math>)
+            — количество заказов, осуществленных сервисом. <!--l. 77-->
+            <p style="text-indent: 0em;">Каждая из следующих <!--l. 77--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>
+                строк содержит информацию об одном заказе в формате <!--l. 77--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi><mspace
+                        width="0.3em"><mi>E</mi><mi>n</mi><mi>d</mi><mspace width="0.3em"><mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi></mspace></mspace></math>
+                (<!--l. 77--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo>≤</mo>
+                    <mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi> <mo>&lt;</mo> <mi>E</mi><mi>n</mi><mi>d</mi> <mo>≤</mo> <mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>9</mn></mrow></msup><mo>;</mo><mn>1</mn>
+                    <mo>≤</mo> <mi>C</mi><mi>o</mi><mi>s</mi><mi>t</mi> <mo>≤</mo> <mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>9</mn></mrow></msup></math>)
+                — время начала и конца заказа и стоимость заказа соответственно. <!--l. 79-->
+            </p><p style="text-indent: 0em;">В следующей строке расположено одно целое число <!--l. 79--><math display="inline" style="text-indent:
+      0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi></math> (<!--l. 79--><math display="inline" style="text-indent:
+      0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo>≤</mo> <mi>Q</mi> <mo>≤</mo> <mn>2</mn><mn>0</mn><mn>0</mn><mspace
+                    width="0.3em"><mn>0</mn><mn>0</mn><mn>0</mn></mspace></math>) — количество запросов. <!--l. 81-->
+            </p><p style="text-indent: 0em;">Каждая из следующих <!--l. 81--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi></math>
+                строк содержит информацию об одном запросе в формате <!--l. 81--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi><mspace
+                        width="0.3em"><mi>E</mi><mi>n</mi><mi>d</mi><mspace width="0.3em"><mi>T</mi><mi>y</mi><mi>p</mi><mi>e</mi></mspace></mspace></math>
+                (<!--l. 81--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo>≤</mo>
+                    <mi>S</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>t</mi> <mo>≤</mo> <mi>E</mi><mi>n</mi><mi>d</mi> <mo>≤</mo> <mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>9</mn></mrow></msup><mo>;</mo><mn>1</mn>
+                    <mo>≤</mo> <mi>T</mi><mi>y</mi><mi>p</mi><mi>e</mi> <mo>≤</mo> <mn>2</mn></math>) — время начала и конца промежутка и тип
+                запроса соответственно. <!--l. 83-->
+            </p><p style="text-indent: 0em;">Соответствие типов запроса следующее: </p><ol style="list-style-type: decimal;">
+                <li>Найти суммарную стоимость заказов, которые начались в заданный промежуток времени; </li>
+                <li>Найти суммарную продолжительность заказов, которые завершились в заданный промежуток времени; </li>
+            </ol>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </div>
+        <h2>Формат вывода</h2>
+        <div class="output-specification"> В единственной строке через пробел выведите <!--l. 93--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi></math>
+            целых чисел — ответы на запросы в порядке их ввода.
+        </div>
+        <h3>Пример 1</h3>
+        <table class="sample-tests">
+            <thead>
+            <tr>
+                <th>Ввод</th>
+                <th>Вывод</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><pre>1
+10 100 1000
+6
+1 10 1
+1 10 2
+10 100 1
+10 100 2
+100 1000 1
+100 1000 2
+</pre></td>
+                <td><pre>1000 0 1000 90 0 90
+</pre></td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Пример 2</h3>
+        <table class="sample-tests">
+            <thead>
+            <tr>
+                <th>Ввод</th>
+                <th>Вывод</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><pre>5
+5 20 5
+6 21 4
+6 22 3
+7 23 2
+10 24 1
+3
+6 11 1
+4 6 1
+7 11 1
+</pre></td>
+                <td><pre>10 12 3
+</pre></td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Пример 3</h3>
+        <table class="sample-tests">
+            <thead>
+            <tr>
+                <th>Ввод</th>
+                <th>Вывод</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><pre>7
+3 6 1
+4 6 2
+3 4 3
+4 10 100500
+4 11 777
+3 8 365
+4 8 31
+6
+6 6 2
+6 8 2
+5 9 2
+3 12 2
+9 12 2
+8 12 2
+</pre></td>
+                <td><pre>5 14 14 28 13 22
+</pre></td>
+            </tr>
+            </tbody>
+        </table>
+        <h2>Примечания</h2>
+        <div class="notes"><span style="font-weight: bold;">Первый тестовый пример</span>. <!--l. 98-->
+            <p style="text-indent: 0em;">Есть данные про <!--l. 98--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math>
+                заказ: </p><ol style="list-style-type: decimal;">
+                <li>c 10-й по 100-ю минуту стоимостью 1000; </li>
+            </ol>
+            <!--l. 106-->
+            <p style="text-indent: 0em;">Необходимо ответить на следующие <!--l. 106--><math display="inline" style="text-indent: 0em;"
+                                                                                             xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math> запросов: </p><ol style="list-style-type: decimal;">
+                <li>суммарная стоимость заказов, начавшихся в промежутке между 1-й и 10-й минутами; </li>
+                <li>суммарная продолжительность заказов, закончившихся в промежутке между 1-й и 10-й минутами; </li>
+                <li>суммарная стоимость заказов, начавшихся в промежутке между 10-й и 100-й минутами; </li>
+                <li>суммарная продолжительность заказов, закончившихся в промежутке между 10-й и 100-й минутами; </li>
+                <li>суммарная стоимость заказов, начавшихся в промежутке между 100-й и 1000-й минутами; </li>
+                <li>суммарная продолжительность заказов, закончившихся в промежутке между 100-й и 1000-й минутами. </li>
+            </ol>
+            <!--l. 119-->
+            <p style="text-indent: 0em;">Единственный в тесте заказ подходит под: </p><ul>
+                <li>первый запрос, так как начало запроса 10 удовлетворяет условию <!--l. 122--><math display="inline" style="text-indent:
+      0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo>≤</mo> <mn>1</mn><mn>0</mn> <mo>≤</mo> <mn>1</mn><mn>0</mn></math>;
+                </li>
+                <li>третий запрос, так как начало запроса 10 удовлетворяет условию <!--l. 123--><math display="inline" style="text-indent:
+      0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mn>0</mn> <mo>≤</mo> <mn>1</mn><mn>0</mn> <mo>≤</mo> <mn>1</mn><mn>0</mn><mn>0</mn></math>;
+                </li>
+                <li>четвертый запрос, так как конец запроса 100 удовлетворяет условию <!--l. 124--><math display="inline" style="text-indent:
+      0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mn>0</mn> <mo>≤</mo> <mn>1</mn><mn>0</mn><mn>0</mn> <mo>≤</mo>
+                    <mn>1</mn><mn>0</mn><mn>0</mn></math>; </li>
+                <li>шестой запрос, так как конец запроса 100 удовлетворяет условию <!--l. 125--><math display="inline" style="text-indent:
+      0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mn>0</mn><mn>0</mn> <mo>≤</mo> <mn>1</mn><mn>0</mn><mn>0</mn>
+                    <mo>≤</mo> <mn>1</mn><mn>0</mn><mn>0</mn><mn>0</mn></math>;</li>
+            </ul>
+            <!--l. 128-->
+            <p style="text-indent: 0em;"><span style="font-weight: bold;">Второй тестовый пример</span>. <!--l. 130-->
+            </p><p style="text-indent: 0em;">Есть данные про <!--l. 130--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math>
+                заказов: </p><ol style="list-style-type: decimal;">
+                <li>c 5-й по 20-й минуту стоимостью 5; </li>
+                <li>c 6-й по 21-ю минуту стоимостью 4; </li>
+                <li>c 6-й по 22-ю минуту стоимостью 3; </li>
+                <li>c 7-й по 23-ю минуту стоимостью 2; </li>
+                <li>c 10-й по 24-ю минуту стоимостью 1. </li>
+            </ol>
+            <!--l. 142-->
+            <p style="text-indent: 0em;">Необходимо ответить на следующие <!--l. 142--><math display="inline" style="text-indent: 0em;"
+                                                                                             xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> запроса про суммарную стоимость заказов, начавшихся в заданном
+                промежутке: </p><ol style="list-style-type: decimal;">
+                <li>между 6-й и 11-й минутами; </li>
+                <li>между 4-й и 6-й минутами; </li>
+                <li>между 7-й и 11-й минутами; </li>
+            </ol>
+            <!--l. 152-->
+            <p style="text-indent: 0em;">Под первый запрос подходят заказы 2, 3, 4, 5, поэтому ответом на запрос будет их суммарная стоимость
+                <!--l. 152--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn> <mo>+</mo>
+                    <mn>3</mn> <mo>+</mo> <mn>2</mn> <mo>+</mo> <mn>1</mn> <mo>=</mo></math> <span style="font-weight: bold;">10</span>. <!--l.
+      154-->
+            </p><p style="text-indent: 0em;">Под второй запрос подходят заказы 1, 2 и 3 — поэтому ответом будет <!--l. 154--><math display="inline"
+                                                                                                                                   style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn> <mo>+</mo> <mn>4</mn> <mo>+</mo> <mn>3</mn>
+                <mo>=</mo></math> <span style="font-weight: bold;">12</span>. <!--l. 156-->
+            </p><p style="text-indent: 0em;">Третьему запросу удовлетворяют лишь заказы 4, 5, поэтому ответом на запрос будет <!--l. 156--><math
+                    display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn> <mo>+</mo> <mn>1</mn> <mo>=</mo></math>
+                <span style="font-weight: bold;">3</span>. <!--l. 158-->
+            </p><p style="text-indent: 0em;"><span style="font-weight: bold;">Третий тестовый пример</span>. <!--l. 160-->
+            </p><p style="text-indent: 0em;">Есть данные про <!--l. 160--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>
+                заказов: </p><ol style="list-style-type: decimal;">
+                <li>c 3-й по 6-ю минуту стоимостью 1; </li>
+                <li>c 4-й по 6-ю минуту стоимостью 2; </li>
+                <li>c 3-й по 4-ю минуту стоимостью 3; </li>
+                <li>c 4-й по 10-ю минуту стоимостью 100500; </li>
+                <li>c 4-й по 11-ю минуту стоимостью 777; </li>
+                <li>c 3-й по 8-ю минуту стоимостью 365; </li>
+                <li>c 4-й по 8-ю минуту стоимостью 31. </li>
+            </ol>
+            <!--l. 174-->
+            <p style="text-indent: 0em;">Необходимо ответить на следующие <!--l. 174--><math display="inline" style="text-indent: 0em;"
+                                                                                             xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math> запросов про суммарную продолжительность заказов, закончившихся
+                в заданном промежутке: </p><ol style="list-style-type: decimal;">
+                <li>между 6-й и 6-й минутами; </li>
+                <li>между 6-й и 8-й минутами; </li>
+                <li>между 5-й и 9-й минутами; </li>
+                <li>между 3-й и 12-й минутами; </li>
+                <li>между 9-й и 12-й минутами; </li>
+                <li>между 8-й и 12-й минутами; </li>
+            </ol>
+            <!--l. 187-->
+            <p style="text-indent: 0em;">Под первый запрос подходят заказы 1 и 2 заказы, поэтому ответом на запрос будет их суммарная
+                продолжительность <!--l. 187--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>6</mn>
+                    <mo>−</mo> <mn>3</mn></mrow><mo>)</mo></mrow> <mo>+</mo> <mrow><mo>(</mo><mrow><mn>6</mn> <mo>−</mo> <mn>4</mn></mrow><mo>)</mo></mrow>
+                    <mo>=</mo> <mn>3</mn> <mo>+</mo> <mn>2</mn> <mo>=</mo></math> <span style="font-weight: bold;">5</span>. <!--l. 189-->
+            </p><p style="text-indent: 0em;">Под второй запрос подходят заказы 1, 2, 6 и 7 — их суммарная продолжительность равна <!--l.
+      189--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>6</mn>
+                <mo>−</mo> <mn>3</mn></mrow><mo>)</mo></mrow> <mo>+</mo> <mrow><mo>(</mo><mrow><mn>6</mn> <mo>−</mo> <mn>4</mn></mrow><mo>)</mo></mrow>
+                <mo>+</mo> <mrow><mo>(</mo><mrow><mn>8</mn> <mo>−</mo> <mn>3</mn></mrow><mo>)</mo></mrow> <mo>+</mo> <mrow><mo>(</mo><mrow><mn>8</mn>
+                    <mo>−</mo> <mn>4</mn></mrow><mo>)</mo></mrow> <mo>=</mo> <mn>3</mn> <mo>+</mo> <mn>2</mn> <mo>+</mo> <mn>5</mn> <mo>+</mo>
+                <mn>4</mn> <mo>=</mo></math> <span style="font-weight: bold;">14</span>. <!--l. 191-->
+            </p><p style="text-indent: 0em;">Третьему запросу удовлетворяют те же самые заказы, что и под второй — поэтому ответ также
+                равен <span style="font-weight: bold;">14</span>. <!--l. 193-->
+            </p><p style="text-indent: 0em;">Четвертый запрос включает в себя вообще все заказы, поэтому ответ на данный запрос равен
+                <!--l. 193--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>6</mn><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mn>6</mn><mo>−</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mn>4</mn><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mn>1</mn><mn>0</mn><mo>−</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mn>1</mn><mn>1</mn><mo>−</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mn>8</mn><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mn>8</mn><mo>−</mo><mn>4</mn></mrow><mo>)</mo></mrow>
+                    <mo>=</mo> <mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>4</mn>
+                    <mo>=</mo></math> <span style="font-weight: bold;">28</span>. <!--l. 195-->
+            </p><p style="text-indent: 0em;">В пятом запросе рассматриваются заказы 4 и 5 — ответом будет <!--l. 195--><math display="inline"
+                                                                                                                             style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>1</mn><mn>0</mn> <mo>−</mo>
+                <mn>4</mn></mrow><mo>)</mo></mrow> <mo>+</mo> <mrow><mo>(</mo><mrow><mn>1</mn><mn>1</mn> <mo>−</mo> <mn>4</mn></mrow><mo>)</mo></mrow>
+                <mo>=</mo> <mn>6</mn> <mo>+</mo> <mn>7</mn> <mo>=</mo></math> <span style="font-weight: bold;">13</span>. <!--l. 197-->
+            </p><p style="text-indent: 0em;">Последний, шестой запрос затрагивает запросы 4, 5, 6 и 7 — их суммарная продолжительность
+                равна <!--l. 197--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mrow><mn>1</mn><mn>0</mn>
+                    <mo>−</mo> <mn>4</mn></mrow><mo>)</mo></mrow> <mo>+</mo> <mrow><mo>(</mo><mrow><mn>1</mn><mn>1</mn> <mo>−</mo> <mn>4</mn></mrow><mo>)</mo></mrow>
+                    <mo>+</mo> <mrow><mo>(</mo><mrow><mn>8</mn> <mo>−</mo> <mn>3</mn></mrow><mo>)</mo></mrow> <mo>+</mo> <mrow><mo>(</mo><mrow><mn>8</mn>
+                        <mo>−</mo> <mn>4</mn></mrow><mo>)</mo></mrow> <mo>=</mo> <mn>6</mn> <mo>+</mo> <mn>7</mn> <mo>+</mo> <mn>5</mn> <mo>+</mo>
+                    <mn>4</mn> <mo>=</mo></math> <span style="font-weight: bold;">22</span>. </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </div>
+    </div></div><a name="998/2022_08_07/dEdLdzwpuo"></a><div class="problem__messages"><div class="problem__available-message"></div></div><div class="problem__solution"><div class="solution solution_type_compiler-list i-bem" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;998/2022_08_07/dEdLdzwpuo@compilerId&quot;,&quot;problemId&quot;:&quot;998/2022_08_07/dEdLdzwpuo&quot;,&quot;compilerId&quot;:&quot;openjdk15&quot;,&quot;maxFileSize&quot;:262144,&quot;validation&quot;:{}}}"><label class="solution__label" for="998/2022_08_07/dEdLdzwpuo@compilerId">Язык</label><span class="select select_size_s select_theme_normal select_role_compiler-list select_layout_fixed-l i-bem" data-bem="{&quot;select&quot;:{&quot;rows&quot;:8,&quot;live&quot;:true,&quot;selected&quot;:&quot;openjdk15&quot;}}"><button class="button button_theme_normal button_arrow_down button_size_s select__button i-bem" data-bem="{&quot;button&quot;:{}}" role="listbox" type="button" aria-haspopup="true" aria-expanded="false"><span class="button__text">OpenJDK Java 15</span></button><select class="select__control" name="998/2022_08_07/dEdLdzwpuo@compilerId" id="uniq166190969100913487" tabindex="-1" aria-hidden="true" autocomplete="off" value="openjdk15"><option class="select__option" value="gcc_cpp20">GNU C++20 10.2</option><option class="select__option" value="golang_docker">Golang 1.16</option><option class="select__option" value="kotlin_1_5_0">Kotlin 1.5.32 (JRE 11)</option><option class="select__option" value="openjdk15" selected="selected">OpenJDK Java 15</option><option class="select__option" value="php7_3_5">PHP 7.3.5</option><option class="select__option" value="pypy3_7_1_0">Python 3.7 (PyPy 7.3.3)</option><option class="select__option" value="scala_docker">Scala 2.13.4</option></select></span></div><div class="solution solution_type_group solution_selected_text i-bem" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;998/2022_08_07/dEdLdzwpuo@solution&quot;,&quot;problemId&quot;:&quot;998/2022_08_07/dEdLdzwpuo&quot;,&quot;compilerId&quot;:&quot;openjdk15&quot;,&quot;maxFileSize&quot;:262144}}"><div class="solution__field solution__field_role_switcher"><span class="radio-button radio-button_size_s radio-button_theme_normal i-bem" data-bem="{&quot;radio-button&quot;:{&quot;live&quot;:false}}"><label class="radio-button__radio radio-button__radio_checked_yes radio-button__radio_pressed_yes radio-button__radio_side_left" for="uniq166190969100913488"><input class="radio-button__control" value="text" checked="checked" id="uniq166190969100913488" type="radio" name="998/2022_08_07/dEdLdzwpuo@solution"/><span class="radio-button__text">Набрать здесь</span></label><label class="radio-button__radio radio-button__radio_side_right radio-button__radio_next-for-pressed_yes" for="uniq166190969100913489"><input class="radio-button__control" value="file" id="uniq166190969100913489" type="radio" name="998/2022_08_07/dEdLdzwpuo@solution"/><span class="radio-button__text">Отправить файл</span></label></span></div><div class="solution__field solution__field_role_panes"><div class="solution__pane solution__pane_name_text"><span class="input input_type_textarea input_size_s input_disabled_yes input_role_code-type-text input_theme_normal i-bem" data-bem="{&quot;input&quot;:{&quot;live&quot;:false}}"><span class="input__box"><textarea class="input__control" id="uniq166190969100913490" name="998/2022_08_07/dEdLdzwpuo@text" disabled="disabled" aria-labelledby="labeluniq166190969100913490 hintuniq166190969100913490" rows="8" cols="10"></textarea><span class="input__clear" unselectable="on"></span></span></span></div><div class="solution__pane solution__pane_name_file"><span class="attach attach_theme_normal attach_size_s attach_disabled_yes attach_role_code-type-attach attach_for_contest i-bem" data-bem="{&quot;attach&quot;:{&quot;live&quot;:false}}"><span class="button button_theme_normal button_size_s button_disabled_yes attach__button i-bem" data-bem="{&quot;button&quot;:{}}"><span class="button__text" id="textuniq166190969100913491" aria-hidden="true">Выбрать</span><input class="attach__control button__control" type="file" name="998/2022_08_07/dEdLdzwpuo@file" id="uniq166190969100913491" aria-labelledby="textuniq166190969100913491" disabled="disabled"/></span><span class="attach__holder attach__holder_state_hidden" aria-hidden="true"><img class="image attach__icon-file" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="attach__text">Файл не выбран</span><img class="image attach__reset" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/></span></span></div></div></div></div></fieldset><div class="problem__send"><input type="hidden" name="sk" value="uc5986e46c6e1a40707b62badbfc4bd30"/><input type="hidden" name="retpath" value="https://contest.yandex.ru/contest/39459/problems/D/#998/2022_08_07/dEdLdzwpuo"/><button class="button button_theme_action button_size_s button_role_submit i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="submit"><span class="button__text">Отправить</span></button></div><div class="problem__attempts"><div class="msg msg_type_info"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/>осталось 100 попыток</div></div><div class="problem__problems-nav"><span class="problem__problems-nav-left"><a class="button button_theme_normal button_size_s i-bem" data-bem="{&quot;button&quot;:{}}" role="button" href="/contest/39459/problems/C/"><span class="button__text">Предыдущая</span></a></span><span class="problem__problems-nav-right"><a class="button button_theme_normal button_size_s i-bem" data-bem="{&quot;button&quot;:{}}" role="button" href="/contest/39459/problems/E/"><span class="button__text">Следующая</span></a></span></div></form><ul class="tabs-menu tabs-menu_theme_normal tabs-menu_layout_vert tabs-menu_size_m tabs-menu_role_problems inline-block i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="/contest/39459/problems/A/"><span class="tabs-menu__tab-content-text">A. Хитрый шифр</span><div class="submit-status submit-status_size_small submit-status_verdict_OK submit-status_mood_success popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="OK"><a class="link image image_type_success" href="/contest/39459/run-report/69892284/">&amp;nbsp;</a></div></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/B/"><span class="tabs-menu__tab-content-text">B. Через тернии к клиенту</span><div class="submit-status submit-status_size_small submit-status_verdict_TL submit-status_mood_fail popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Превышен лимит времени исполнения"><a class="link image image_type_fail" href="/contest/39459/run-report/69893135/">&amp;nbsp;</a></div></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/C/"><span class="tabs-menu__tab-content-text">C. Приснится же такое...</span></a></li><li class="tabs-menu__tab tabs-menu__tab_active_yes"><a class="link" href="/contest/39459/problems/D/"><span class="tabs-menu__tab-content-text">D. Лей, лей, не жалей</span></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/E/"><span class="tabs-menu__tab-content-text">E. Занимательная алхимия</span></a></li></ul><div class="msg msg_type_info"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/>Посылок нет</div></div></div><div class="page__foot"><div class="footer clearfix" role="contentinfo"><div class="footer__column"><a class="link footer__link" href="//yandex.ru/support/contest/index.html">Справка</a><a class="link footer__link" href="//yandex.ru/support/contest/troubleshooting.xml?form1580-cntst_link=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F39459%2Fproblems%2FD%2F&amp;form1580-cntst_login=Vadim%20Kuznetsov">Обратная связь</a><a class="link footer__link" href="https://yandex.ru/legal/contest_termsofuse/">Пользовательское соглашение</a></div><div class="footer__column footer__column_side_right"><div class="copyright">&copy;&nbsp;2013&ndash;2022&nbsp;&nbsp;ООО «<a class="copyright__link footer__link" href="http://www.yandex.ru">Яндекс</a>»</div></div></div></div><i class="b-statcounter"><i class="b-statcounter__metrika b-statcounter__metrika_type_js i-bem" data-bem="{&quot;b-statcounter__metrika&quot;:{&quot;id&quot;:16150693}}"><noscript><img alt="" src="//mc.yandex.ru/watch/16150693"/></noscript></i></i></body></html>

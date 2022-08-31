@@ -1,0 +1,438 @@
+
+<!DOCTYPE html><html class="i-ua_js_no i-ua_css_standard" lang="ru"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>C. Приснится же такое... — Стажировка осень-зима 2022: бэкенд — Яндекс.Контест</title><link rel="shortcut icon" href="/favicon.ico?1661985084240"/><script nonce="bd4NSvYA8zPVdl/daNzVAQ==">;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);;(function(d,e,c,n,w,v,f){e=d.documentElement;c="className";n="createElementNS";f="firstChild";w="http://www.w3.org/2000/svg";e[c]+=" i-ua_svg_"+(!!d[n]&&!!d[n](w,"svg").createSVGRect?"yes":"no");v=d.createElement("div");v.innerHTML="<svg/>";e[c]+=" i-ua_inlinesvg_"+((v[f]&&v[f].namespaceURI)==w?"yes":"no");})(document);;(function(d,e,p){e=d.documentElement;p="placeholder";e.className+=" i-ua_"+p+(p in d.createElement("input")?"_yes":"_no")})(document);</script><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/highlighter/highlighter.css"/><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.css"/><!--[if IE 6]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie6.css"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie7.css"/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie8.css"/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ie9.css"/><![endif]--><link rel="stylesheet" href="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.print.css" media="print"/><script src="//yastatic.net/jquery/1.8.3/jquery.min.js" nonce="mxo5C5GWsNQJuk5WXSF4/g=="></script><script src="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/bundles/problems/_problems.ru.js" nonce="bd4NSvYA8zPVdl/daNzVAQ=="></script><meta name="description" content="Яндекс.Контест это сервис, позволяющий программистам со всего мира соревноваться на предложенных задачах, а преподавателям и авторам задач -- размещать задания и серии заданий и предоставлять доступ пользователям через интернет."/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://yastatic.net/s3/contest/katex/v0.13.0/katex.min.css"/><script nonce="bd4NSvYA8zPVdl/daNzVAQ==">window.MathJax = { AssistiveMML: { disabled: true }, showMathMenu: false };</script><script src="//yandex.st/contest/mathjax/MathJax.js?config=MML_CHTML" nonce="bd4NSvYA8zPVdl/daNzVAQ=="></script><script src="//yastatic.net/s3/contest/static/contest-www/0.194.0-68735f9df1/highlighter/highlighter.js" nonce="bd4NSvYA8zPVdl/daNzVAQ=="></script></head><body class="b-page b-page__body i-global i-ua i-ua_interaction_yes page i-bem" data-bem="{&quot;i-global&quot;:{&quot;lang&quot;:&quot;ru&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;content-region&quot;:&quot;ru&quot;,&quot;click-host&quot;:&quot;//clck.yandex.ru&quot;,&quot;passport-host&quot;:&quot;https://passport.yandex.ru&quot;,&quot;pass-host&quot;:&quot;pass.yandex.ru&quot;,&quot;social-host&quot;:&quot;social.yandex.ru&quot;,&quot;export-host&quot;:&quot;https://export.yandex.ru&quot;,&quot;login&quot;:&quot;vkuznetcov48&quot;,&quot;lego-static-host&quot;:&quot;//yastatic.net/lego/2.10-142&quot;,&quot;id&quot;:&quot;contest&quot;,&quot;displayName&quot;:&quot;Vadim Kuznetsov&quot;,&quot;yandexuid&quot;:&quot;2503087131659277826&quot;,&quot;social-retpath&quot;:&quot;https://contest.yandex.ru/i-social__closer.html&quot;,&quot;retpath&quot;:&quot;http://contest.yandex.ru/contest/39459/problems/C/&quot;,&quot;passport-msg&quot;:&quot;contest&quot;},&quot;i-ua&quot;:{},&quot;page&quot;:{}}"><div class="page__head island"><div class="banners"></div><div class="header layout layout_type_serp i-bem" data-bem="{&quot;header&quot;:{}}" role="banner"><div class="header__main"><div class="layout__col layout__col_size_3 header__logo"><div class="logo2 logo2_lang_ru"><a class="logo2__yandex" href="//www.yandex.ru"><div class="logo2__text">Яндекс</div></a><a class="logo2__service" href="/"><div class="logo2__text">Контест</div></a></div></div><div class="layout__col header__nav"><div class="dropdown-menu dropdown-menu_theme_ffffff lang-switcher inline-block i-bem" data-bem="{&quot;dropdown-menu&quot;:{},&quot;lang-switcher&quot;:{&quot;tune&quot;:&quot;http://tune.yandex.ru&quot;}}"><span class="lang-switcher__lang lang-switcher__lang_selected_yes link link_pseudo_yes dropdown-menu__switcher i-bem" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup lang-switcher__popup-content dropdown-menu__popup"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><span class="lang-switcher__lang lang-switcher__lang_selected_yes"><div class="country-flag country-flag_s16_ru lang-switcher__flag"></div><span class="lang-switcher__lang-name">Русский</span></span></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><a class="lang-switcher__lang" data-bem="{&quot;lang-switcher__lang&quot;:{&quot;lang&quot;:&quot;en&quot;,&quot;url&quot;:&quot;http://contest.yandex.ru/contest/39459/problems/C/?lang=en&quot;}}" href="http://contest.yandex.ru/contest/39459/problems/C/?lang=en" role="button" tabindex="0"><div class="country-flag country-flag_s16_gb lang-switcher__flag"></div><span class="lang-switcher__lang-name">Английский</span></a></li><li class="b-menu-vert__layout-unit lang-switcher__all"><a class="link" href="http://tune.yandex.ru/lang/">Ещё</a></li></ul></div></div></div></div><div class="dropdown-menu dropdown-menu_user_yes dropdown-menu_theme_ffffff i-bem" data-bem="{&quot;dropdown-menu&quot;:{}}"><a class="user user_menu_yes user_contest_yes i-bem" data-bem="{&quot;user&quot;:{&quot;domikMods&quot;:{&quot;logo&quot;:&quot;ru&quot;},&quot;url&quot;:&quot;https://passport.yandex.ru/auth?origin=contest&amp;retpath=http://contest.yandex.ru/contest/39459/problems/C/&quot;}}" href="https://passport.yandex.ru/passport?mode=passport" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"><span class="user__name" data-bem="{&quot;user__name&quot;:{&quot;maxLength&quot;:16,&quot;maxLengthRelative&quot;:3,&quot;isUglyUserName&quot;:false}}"><span class="user__first-letter">V</span>adim Kuznetsov</span></a><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown__popup popup popup_fade-out_no popup_watch-scroll_no dropdown-menu__popup dropdown-menu__popup_user_yes i-bem" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:&quot;bottom-right&quot;}}"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu"><ul class="b-menu-vert__layout"><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru"><img class="image image_icon_mail" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="link__text user-menu-update i-bem" data-bem="{&quot;user-menu-update&quot;:{}}">Нет новых писем</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://mail.yandex.ru/compose">Написать письмо</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://disk.yandex.ru?source=main-loginmenu"><img class="image image_icon_disk" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="link__text">Мой Диск</span></a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item b-menu-vert__item_separator_yes" role="menuitem"></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="http://tune.yandex.ru">Настройка</a></div></li><li class="b-menu-vert__layout-unit"><div class="b-menu-vert__item" role="menuitem"><a class="link" href="https://passport.yandex.ru">Паспорт</a></div></li><li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><div class="b-menu-vert__item" role="menuitem"><a class="link user user__logout i-bem" data-bem="{&quot;user&quot;:{&quot;_uniqId&quot;:&quot;user__logout&quot;}}" href="https://passport.yandex.ru/passport?mode=logout&amp;yu=2503087131659277826&amp;retpath=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F39459%2Fproblems%2FC%2F">Выйти</a></div></li></ul></div></div></div></div></div></div></div><ul class="tabs-menu tabs-menu_role_sections tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_type_stroked i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><div class="tabs-menu__inner"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="/contest/3/enter/">Пробный контест</a></li><li class="tabs-menu__tab"><a class="link" href="/contest-list/">Архив соревнований</a></li><li class="tabs-menu__tab"><a class="link" href="/compilers/">Настройки компиляторов</a></li><li class="tabs-menu__tab"><a class="link" href="/errors/">Значения ошибок</a></li><li class="tabs-menu__tab"><a class="link" href="/teams/">Команды</a></li></div></ul></div><div class="page__main page__sect"><div class="content content_theme_contest island"><div class="contest-head"><div class="contest-head__item contest-head__item_role_title"><a class="link" href="/contest/39459/enter/?retPage=">Стажировка осень-зима 2022: бэкенд</a></div><div class="contest-head__item contest-head__item_role_status"><div class="status i-bem" data-bem="{&quot;status&quot;:{&quot;finishTime&quot;:1661991116000}}"><div class="status__props"><div class="status__prop"><div class="status__name inline-block"><img class="image image_type_clock" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/></div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661985083994}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">старт:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661973116000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">финиш:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661991116000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">до финиша:</div><div class="status__value inline-block"><div class="countdown i-bem" data-bem="{&quot;countdown&quot;:{&quot;name&quot;:&quot;refresh-timer&quot;,&quot;duration&quot;:6032006}}"></div></div></div></div><div class="status__props"><div class="snippet snippet_hidden_yes status__snippet i-bem" data-bem="{&quot;snippet&quot;:{}}" id=":hidden-info:hidden-status"><div class="snippet__content"><div class="snippet__props"><div class="status__prop"><div class="status__name inline-block">начало:</div><div class="status__value inline-block"><time class="time-local i-bem" data-bem="{&quot;time-local&quot;:{&quot;timestamp&quot;:1661288400000}}"></time></div></div><div class="status__prop"><div class="status__name inline-block">длительность:</div><div class="status__value inline-block">05:00:00</div></div></div></div></div><span class="link link_pseudo_yes link_role_hidden-info i-bem" data-bem="{&quot;link&quot;:{}}" role="button" tabindex="0" id=":hidden-status"><span class="link__inner">...</span></span></div></div></div><div class="contest-head__item contest-head__item_role_aside"><div class="aside i-bem" data-bem="{&quot;aside&quot;:{&quot;sk&quot;:&quot;uc5986e46c6e1a40707b62badbfc4bd30&quot;,&quot;contestId&quot;:&quot;39459&quot;}}"><button class="button button_theme_pseudo button_pseudo_yes button_role_clarifications button_size_s aside__button i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button"><span class="button__text">Объявления жюри</span></button><div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_role_message-box i-bem" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;offset&quot;:{&quot;top&quot;:10}}}}"><div class="popup__under"></div><i class="popup__tail"></i><div class="popup__content"><div class="popup__helper"></div><div class="msg msg_type_info" data-id="157194" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Недоступность внешних библиотек (numpy, pandas, boost и др.)</h6>Для использования доступны лишь библиотеки / модули, входящие в стандартную сборку указанного компилятора.
+
+  Внешние библиотеки (которые необходимо устанавливать отдельно) НЕДОСТУПНЫ для использования в программе.
+
+  Примерами таких НЕДОСТУПНЫХ библиотек являются:
+  - numpy
+  - pandas
+  - boost</div><div class="msg msg_type_info" data-id="156978" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Показ вердиктов за частичные решения</h6>Мы исправили отображение вердиктов - теперь вы увидите не только номер теста, на котором ваше решение валится, но и вердикт, который ему поставила система.</div><div class="msg msg_type_info" data-id="156975" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Вердикты TL и ML и использованные ресурсы</h6>Если вы получаете вердикты TL / ML, то вы можете увидеть рядом с вердиктом время / память, очень близкие к указанным в задаче.
+
+  К примеру, вы можете увидеть TL (2.005 сек) при ограничении в 2 секунды.
+
+  Это НЕ значит, что ваша программа работала всего лишь на 0.005 секунд дольше.
+
+  Это значит, что вашу программу ОСТАНОВИЛИ через 0.005 секунд после выхода за ограничения по времени.
+
+  Мы постарались выставить ограничения таким образом, чтобы корректное решение без каких-либо специфических НЕАСИМПТОТИЧЕСКИХ оптимизаций (кроме оптимизаций ввода/вывода, указанных в других оповещениях) проходило примерно за половину выделенных времени и памяти.</div><div class="msg msg_type_info" data-id="156972" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Возможные вердикты</h6>- OK - задача зачтена.
+  Если вы получили по задаче ОК, то его не уже не отнимут, даже если вы перепошлете на ту же задачу неверное решение.
+
+  - CE - compilation error - ошибка компиляции. Вы можете просмотреть ошибку, выдаваемую компилятором.
+
+  - WA - wrong answer - неправильный ответ
+  - RE - runtime error - ошибка исполнения (деление на ноль, выход за границу массива и т.д.)
+  - TL - time limit - превышено ограничение по времени (на тест)
+  - ML - memory limit - превышено ограничение по памяти (на тест)
+  - PE - presentation error - частный случай WA, когда вывод в несовпадающем с ожидаемым формате
+  - и т.д.</div><div class="msg msg_type_info" data-id="156971" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тестирование решений</h6>Решения тестируются по очереди на представленных в системе тестах (тесты из условия являются их частью).
+
+  Если решение проходит все тесты - оно считается &quot;полным&quot; и вы получаете вердикт ОК.
+
+  Если решение &quot;падает&quot; на одном из тестов, то оно считается частичным и не засчитывается.</div><div class="msg msg_type_info" data-id="156967" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Эффективность решений</h6>Алгоритм, реализованный в вашей программе, должен иметь достаточную эффективность, чтобы пройти ограничения по времени и памяти.
+
+  Эффективность обычно оценивается в терминах &quot;большого О&quot; (встречается еще термин &quot;асимптотика&quot;).
+
+  Если вам незнакомы данные понятия, то советуем ознакомиться с ними и уточнить, сколько базовых операций в секунду в среднем может выполнять ваш язык программирования.
+</div><div class="msg msg_type_info" data-id="156966" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Итоговая оценка</h6>Задача считается решенной, если она решена полностью (прошла все тесты и получила вердикт ОК).
+
+  Любой другой вердикт не засчитывает задачу.</div><div class="msg msg_type_info" data-id="156965" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тесты НЕ из условия</h6>Все тесты, не предоставленные в условии, не доступны для просмотра участниками.
+
+  В то же время все эти тесты удовлетворяют всем ограничениям и другим гарантиям, указанным в разделе &quot;Формат входных данных&quot;.
+
+  Проверять данные гарантии в коде программы не нужно - это гарантия от авторов задач участникам. </div><div class="msg msg_type_info" data-id="156964" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Тесты из условия</h6>Тесты, предоставленные в условии, совпадают с первыми тестами, на которых будет тестироваться ваша программа.
+
+  Если у вас ошибка на одном из этих тестов - у вас есть эти данные в условии, проверьте их.
+
+  Ответы на эти (и все остальные тесты) сгенерированы авторскими решениями и являются правильными.
+
+  К данным тестам есть пояснения, которые описывают получение каждого ответа на теста (с разной степенью детализации).</div><div class="msg msg_type_info" data-id="156962" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый ввод / вывод на С++</h6>При сомнениях в скорости ввода/вывода через cin/cout можете попробовать использовать следующее ускорение:
+
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+
+  (вызывается в начале выполнения программы)
+  Этот код отключает синхронизацию с printf/scanf и синхронизацию потоков cin/cout между собой.
+
+  Также напоминаем, что endl вызывает внутри себя flush, что может негативно сказаться на скорости выполнения работы программы (рекомендуется использовать &quot;\n&quot; при необходимости)</div><div class="msg msg_type_info" data-id="156961" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый вывод на языке Java</h6>В случае необходимости ускорения вывода можно использовать любой буферизованный вывод (PrintWriter / BufferedWriter). Единственное условие - не забудьте закрыть поток после вывода ^_^</div><div class="msg msg_type_info" data-id="156960" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый ввод на языке Java</h6>На больших объемах данных Scanner начинает проседать по производительности.
+
+  Рекомендуется рассмотреть возможность использования BufferedReader (возможно вам еще приглянется класс StringTokenizer).
+
+  Пример ввода с BufferedReader есть в справке Яндекс.Контеста</div><div class="msg msg_type_info" data-id="156959" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Быстрый вывод на языке Python</h6>Рекомендуется рассмотреть возможность вывода данных с помощью комбинации:
+  - сбор всех результирующих данных в один массив
+  - приведение элементов данного массива к строкам:
+  - &quot;скрепление&quot; данных строк с помощью функции &quot;join&quot; у выбранного разделителя
+
+  В качестве примера: вывод массива целых чисел &quot;ans&quot; в формате &quot;каждое число на новой строке&quot;:
+
+  ans_str = &quot;\n&quot;.join(map(str, ans))
+  print(ans_str)</div><div class="msg msg_type_info" data-id="156958" data-seen="1"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><h6 class="msg__header">Примеры ввода и вывода</h6>Обращаем ваше внимание, что примеры кода на различных языках для ввода / вывода из файла / консоли можно найти в справке к Яндекс.Контесту:
+
+  https://yandex.ru/support/contest/examples-stdin-stdout.html</div></div></div><button class="button button_theme_pseudo button_disabled_no button_pseudo_yes button_role_end button_size_s aside__button i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button"><span class="button__text">Завершить</span></button></div></div></div><ul class="tabs-menu tabs-menu_size_m tabs-menu_theme_normal tabs-menu_layout_horiz tabs-menu_role_contest tabs-menu_type_stroked i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes tabs-menu__tab_active_yes"><a class="link" href="/contest/39459/problems/">Задачи</a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/submits/">Посылки</a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/messages/">Сообщения</a></li></ul><form class="problem problem_type_single problem_mode_one-button problem_contest-type_simple i-bem" data-bem="{&quot;problem&quot;:{}}" action="/contest/39459/submit/" method="POST" enctype="multipart/form-data"><fieldset class="problem__item"><div class="problem__statement text" data-bem="{&quot;problem__statement&quot;:{}}"><!DOCTYPE html
+  SYSTEM "html">
+  <div class="problem-statement">
+    <div class="header">
+      <h1 class="title">C. Приснится же такое...</h1>
+      <table>
+        <tr>
+          <th>Язык</th>
+          <th>Ограничение времени</th>
+          <th>Ограничение памяти</th>
+          <th>Ввод</th>
+          <th>Вывод</th>
+        </tr>
+        <tr>
+          <td width="1%">Все языки</td>
+          <td>2&nbsp;секунды</td>
+          <td>512Mb</td>
+          <td rowspan="7">стандартный ввод или input.txt</td>
+          <td rowspan="7">стандартный вывод или output.txt</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Python 3.7.3</nobr>
+          </td>
+          <td>3&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Python 3.7 (PyPy 7.3.3)</nobr>
+          </td>
+          <td>3&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Scala 2.13.4</nobr>
+          </td>
+          <td>3&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>OpenJDK Java 15</nobr>
+          </td>
+          <td>3&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>PHP 7.3.5</nobr>
+          </td>
+          <td>3&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+        <tr>
+          <td>
+            <nobr>Kotlin 1.5.32 (JRE 11)</nobr>
+          </td>
+          <td>3&nbsp;секунды</td>
+          <td>512Mb</td>
+        </tr>
+      </table>
+    </div>
+    <h2></h2>
+    <div class="legend"> Наконец-то с царством Морфея удалось наладить дипломатические отношения! Первым делом в магазины поступили самые корректные
+      и полные сонники, составленные в сотрудничестве с главными сномагами царства. <!--l. 49-->
+      <p style="text-indent: 0em;">Ваш близкий друг Тирания Вампадур купила такой сонник одной из первых. Но тут же её ждало разочарование.
+        Оказалось, что некоторые сны образуют целую последовательность сюжетов, которую надо интерпретировать только целиком. <!--l.
+      51-->
+      </p><p style="text-indent: 0em;">И у Тирании оказалась именно такая ситуация. Когда-то давно ей приснилось двоичное дерево
+        из <!--l. 51--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>
+        вершин, занумерованных целыми числами от <!--l. 51--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math>
+        до <!--l. 51--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>.
+        <!--l. 53-->
+      </p><p style="text-indent: 0em;">Вершина <!--l. 53--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math>
+        являлась корнем. У каждой вершины <!--l. 53--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+        было до двух сыновей: левый имел номер <!--l. 53--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn>
+          <mo>⋅</mo> <mi>v</mi></math>, правый — <!--l. 53--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn>
+          <mo>⋅</mo> <mi>v</mi> <mo>+</mo> <mn>1</mn></math> (при условии, что их номера не превосходили <!--l. 53--><math display="inline"
+                                                                                                                           style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>). Таким образом, зная число <!--l.
+      53--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>, дерево
+        можно было однозначно восстановить. <!--l. 55-->
+      </p><p style="text-indent: 0em;">Но, к сожалению, следующие <!--l. 55--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi></math>
+        ночей Тирании снились похожие сны: одна из вершин дерева <!--l. 55--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+        менялась местами с её предком (если <!--l. 55--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+        была корнем дерева, то ничего не происходило). Причем эти изменения переносились между снами, всё больше и больше изменяя
+        оригинальное дерево. <!--l. 57-->
+      </p><p style="text-indent: 0em;">Чтобы верно интерпретировать значение снов, Тирании нужно узнать итоговую структуру дерева
+        после всех произошедших с ним изменений. Она просит вас помочь ей и по последовательности менявшихся вершин найти итоговую
+        структуру дерева из её снов. <!--l. 59-->
+      </p><p style="text-indent: 0em;">Понимая, что в этом деле важна точность, вы расспросили Тиранию насчет процесса обмена местами
+        вершины <!--l. 59--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+        с её предком. <!--l. 61-->
+      </p><p style="text-indent: 0em;">Введем обозначения: </p><ul>
+        <li>
+          <!--l. 65--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>
+          — предок вершины <!--l. 65--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>,
+          <!--l. 65--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>p</mi></math>
+          — предок вершины <!--l. 65--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>
+          (если таковые существуют); </li>
+        <li>
+          <!--l. 66--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mi>l</mi></math>
+          — левый ребенок <!--l. 66--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>,
+          <!--l. 66--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mi>r</mi></math>
+          — правый ребенок <!--l. 66--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>;
+        </li>
+        <li>
+          <!--l. 67--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>l</mi></math>
+          — левый ребенок <!--l. 67--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>,
+          <!--l. 67--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>r</mi></math>
+          — правый ребенок <!--l. 67--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>.
+        </li>
+      </ul>
+      <!--l. 71-->
+      <p style="text-indent: 0em;">В таком случае обмен задаётся следующими условиями: </p><ul>
+        <li><span style="font-weight: bold;">Изменение предка</span>: если <!--l. 75--><math display="inline" style="text-indent:
+      0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math> — левый ребенок вершины <!--l. 75--><math display="inline"
+                                                                                                                   style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>p</mi></math>, то <!--l. 75--><math display="inline"
+                                                                                                                                                                                                                                          style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> становится левым ребенком <!--l. 75--><math
+                display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>p</mi></math>, иначе —
+          правым. </li>
+        <li>если <!--l. 76--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+          — <span style="font-weight: bold;">левый ребенок </span>вершины <!--l. 76--><math display="inline" style="text-indent: 0em;"
+                                                                                            xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>, то: <ol style="list-style-type: decimal;">
+            <li>
+              <!--l. 80--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>
+              становится левым ребенком <!--l. 80--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>;
+            </li>
+            <li>
+              <!--l. 81--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mi>r</mi></math>
+              остаётся правым ребенком <!--l. 81--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>;
+            </li>
+            <li>
+              <!--l. 82--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mi>l</mi></math>
+              становится левым ребенком <!--l. 82--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>;
+            </li>
+            <li>
+              <!--l. 83--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>r</mi></math>
+              остаётся правым ребенком <!--l. 83--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>.
+            </li>
+          </ol>
+          <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right: 1em; text-align: center;">
+            <!--l. 87-->
+            <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            </p><div style="margin-bottom: 0.5em; margin-top: 0.5em; text-align: center;">
+            <table cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto;">
+              <colgroup>
+                <col>
+                <col>
+              </colgroup>
+              <tbody><tr style="vertical-align: baseline;">
+                <td style="padding-left: 5pt; padding-right: 5pt; text-align: center; white-space: nowrap;"><img alt="PIC" src="/testsys/statement-image?imageId=3d38c4746fdd108a340d5505d9f7720c661a62b77ca71fd1e96de22dd45079ad"></td>
+                <td style="padding-left: 5pt; padding-right: 5pt; text-align: center; white-space: nowrap;"><img alt="PIC" src="/testsys/statement-image?imageId=6ae72a6dafd19c99e62a976d0e0f73432ae1b5a3bcf3002ab2bf17e32e5181ce"></td>
+              </tr>
+              </tbody></table>
+          </div>
+            <p></p>
+          </div>
+        </li>
+        <li>аналогично, если <!--l. 94--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+          — <span style="font-weight: bold;">правый</span> <span style="font-weight: bold;">ребенок </span>вершины <!--l. 94--><math
+                  display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>, то: <ol style="list-style-type:
+      decimal;">
+            <li>
+              <!--l. 98--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>
+              становится правым ребенком <!--l. 98--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>;
+            </li>
+            <li>
+              <!--l. 99--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mi>l</mi></math>
+              остаётся левым ребенком <!--l. 99--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>;
+            </li>
+            <li>
+              <!--l. 100--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mi>r</mi></math>
+              становится правым ребенком <!--l. 100--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>;
+            </li>
+            <li>
+              <!--l. 101--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mi>l</mi></math>
+              остаётся левым ребенком <!--l. 101--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>.
+            </li>
+          </ol>
+          <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right: 1em; text-align: center;">
+            <!--l. 105-->
+            <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            </p><div style="margin-bottom: 0.5em; margin-top: 0.5em; text-align: center;">
+            <table cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto;">
+              <colgroup>
+                <col>
+                <col>
+              </colgroup>
+              <tbody><tr style="vertical-align: baseline;">
+                <td style="padding-left: 5pt; padding-right: 5pt; text-align: center; white-space: nowrap;"><img alt="PIC" src="/testsys/statement-image?imageId=c9724ce8618b2fa92dee0a3f927a68f2d97d10b856da1e000655e66763418cac"></td>
+                <td style="padding-left: 5pt; padding-right: 5pt; text-align: center; white-space: nowrap;"><img alt="PIC" src="/testsys/statement-image?imageId=890db2851cfcc0ba96a6756e7608d6d211a9b399912d09445e2c8e5d1e375c12"></td>
+              </tr>
+              </tbody></table>
+          </div>
+            <p></p>
+          </div>
+        </li>
+      </ul>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+
+    </div>
+    <h2>Формат ввода</h2>
+    <div class="input-specification"> Первая строка содержит два целых числа <!--l. 115--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math>
+      и <!--l. 115--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi></math>
+      (<!--l. 115--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo>≤</mo>
+        <mi>N</mi> <mo>≤</mo> <mn>7</mn><mn>5</mn><mn>0</mn><mo>;</mo><mn>1</mn> <mo>≤</mo> <mi>Q</mi> <mo>≤</mo> <mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>6</mn></mrow></msup></math>)
+      — количество вершин в дереве и количество изменений, произошедших с деревом. <!--l. 117-->
+      <p style="text-indent: 0em;">В следующей строке дано <!--l. 117--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi></math>
+        целых чисел <!--l. 117--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mi>v</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+        <!--l. 117--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msub></math>,
+        <!--l. 117--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mo>…</mo><mspace
+                width="0.3em"></mspace></math>, <!--l. 117--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mi>v</mi></mrow><mrow><mi>q</mi></mrow></msub></math>
+        (<!--l. 117--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo>≤</mo>
+          <msub><mrow><mi>v</mi></mrow><mrow><mi>i</mi></mrow></msub> <mo>≤</mo> <mi>N</mi></math>), где <!--l. 117--><math display="inline"
+                                                                                                                            style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><msub><mrow><mi>v</mi></mrow><mrow><mi>i</mi></mrow></msub></math>
+        — номер вершины, обменявшейся местами со своим предком в <!--l. 117--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math>-ю
+        ночь. </p>
+
+    </div>
+    <h2>Формат вывода</h2>
+    <div class="output-specification"> В единственной строке через пробел требуется вывести номера вершин дерева после всех изменений в формате <!--l. 121--><math
+            display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mi>V</mi> <mi>R</mi></math>,
+      начиная с корня дерева. <!--l. 123-->
+      <p style="text-indent: 0em;">Формат <!--l. 123--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mi>V</mi>
+        <mi>R</mi><mrow><mo>(</mo><mrow><mi>v</mi></mrow><mo>)</mo></mrow></math> определяется рекурсивно для вершины <!--l. 123--><math
+              display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>. </p><ol style="list-style-type:
+      decimal;">
+        <li>если у вершины <!--l. 127--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+          есть левый ребенок <!--l. 127--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>l</mi><mi>v</mi></math>,
+          то сначала выводится всё поддерево <!--l. 127--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>l</mi><mi>v</mi></math>
+          в формате <!--l. 127--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mi>V</mi>
+            <mi>R</mi><mrow><mo>(</mo><mrow><mi>l</mi><mi>v</mi></mrow><mo>)</mo></mrow></math>; </li>
+        <li>выводится номер вершины <!--l. 129--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>;
+        </li>
+        <li>если у вершины <!--l. 131--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>
+          есть правый ребенок <!--l. 131--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mi>v</mi></math>,
+          то выводится всё поддерево <!--l. 131--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mi>v</mi></math>
+          в формате <!--l. 131--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mi>V</mi>
+            <mi>R</mi><mrow><mo>(</mo><mrow><mi>r</mi><mi>v</mi></mrow><mo>)</mo></mrow></math>; </li>
+      </ol>
+      <p></p>
+
+    </div>
+    <h2>Пример</h2>
+    <table class="sample-tests">
+      <thead>
+      <tr>
+        <th>Ввод</th>
+        <th>Вывод</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><pre>10 6
+5 7 4 7 8 7
+</pre></td>
+        <td><pre>7 10 5 2 8 4 9 1 6 3
+</pre></td>
+      </tr>
+      </tbody>
+    </table>
+    <h2>Примечания</h2>
+    <div class="notes"> Объяснение примера строится из двух частей: <ul>
+      <li>Рисунки, показывающие структуру дерева в каждом сне; </li>
+      <li>Текстовое пояснение к выводу на тест;</li>
+    </ul>
+      <!--l. 143-->
+      <p style="text-indent: 0em;">В тестовом примере дано дерево из <!--l. 143--><math display="inline" style="text-indent: 0em;"
+                                                                                        xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mn>0</mn></math> вершин: </p><div style="margin-left: 1em; margin-right:
+      1em; text-align: center;">
+        <!--l. 145-->
+        <p style="text-indent: 0em;">
+          <!--l. 146-->
+        </p><p style="text-indent: 0em;"><img alt="PIC" src="/testsys/statement-image?imageId=0ce4ef0a2b58bc21b46f0c32c534573f6fe89c4c630fa90e68fc417fef92cf73"></p>
+        <p></p>
+      </div>
+      <!--l. 149-->
+      <p style="text-indent: 0em;">Происходит <!--l. 149--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>
+        изменений с деревом: </p><ol style="list-style-type: decimal;">
+        <li>вершина 5 меняется с вершиной 2: <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right: 1em; text-align: center;">
+          <!--l. 155-->
+          <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            <!--l. 156-->
+          </p><p style="margin-bottom: 0.5em; text-indent: 0em;"><img alt="PIC" src="/testsys/statement-image?imageId=7368d6d5fb1edf8e73f1b7a16f5599781234d50813d56d2a9686ccb198b2a5c8"></p>
+          <p></p>
+        </div>
+        </li>
+        <li>вершина 7 меняется с вершиной 3: <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right: 1em; text-align: center;">
+          <!--l. 161-->
+          <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            <!--l. 162-->
+          </p><p style="margin-bottom: 0.5em; text-indent: 0em;"><img alt="PIC" src="/testsys/statement-image?imageId=9202f166e8a57e21e7ff408330c34b4f43adb59cc82fc37cde360b721f3fcd57"></p>
+          <p></p>
+        </div>
+        </li>
+        <li>вершина 4 меняется с вершиной 2: <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right: 1em; text-align: center;">
+          <!--l. 167-->
+          <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            <!--l. 168-->
+          </p><p style="margin-bottom: 0.5em; text-indent: 0em;"><img alt="PIC" src="/testsys/statement-image?imageId=9a8f79f6f1ce0086ad295f0343db0df32ad5c978b85749e592a76fb4c2f5746a"></p>
+          <p></p>
+        </div>
+        </li>
+        <li>вершина 7 меняется с вершиной 1: <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right: 1em; text-align: center;">
+          <!--l. 173-->
+          <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            <!--l. 174-->
+          </p><p style="margin-bottom: 0.5em; text-indent: 0em;"><img alt="PIC" src="/testsys/statement-image?imageId=bc7184993aa125eb447366e3333346c9e746786d84d9425d63f1a70f9e7cb431"></p>
+          <p></p>
+        </div>
+        </li>
+        <li>вершина 8 меняется с вершиной 2: <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right: 1em; text-align: center;">
+          <!--l. 179-->
+          <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            <!--l. 180-->
+          </p><p style="margin-bottom: 0.5em; text-indent: 0em;"><img alt="PIC" src="/testsys/statement-image?imageId=b2e55bed8b799d094044f21c8927aab411b85af08bfc9a4bd22a3d2be3cf0d1d"></p>
+          <p></p>
+        </div>
+        </li>
+        <li>вершина 7 ни с кем не меняется, так как она уже корень: <div style="margin-bottom: 0.5em; margin-left: 1em; margin-right:
+      1em; text-align: center;">
+          <!--l. 185-->
+          <p style="margin-bottom: 0.5em; text-indent: 0em;">
+            <!--l. 186-->
+          </p><p style="margin-bottom: 0.5em; text-indent: 0em;"><img alt="PIC" src="/testsys/statement-image?imageId=48d539b8f265fa049a6af066753d7ef532e82928fa061ebb4a1ed1a94538c945"></p>
+          <p></p>
+        </div>
+        </li>
+      </ol>
+      <!--l. 191-->
+      <p style="text-indent: 0em;">После всех изменений выводим получившееся дерево в формате <!--l. 191--><math display="inline"
+                                                                                                                 style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mi>V</mi> <mi>R</mi></math>: </p><ul>
+        <li>Корень дерева — вершина <!--l. 194--><math display="inline" style="text-indent: 0em;" xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>;
+        </li>
+        <li><span style="font-weight: bold;">Выводим вершину 7</span>; </li>
+        <li>Выводим поддерево вершины 1 — правого ребенка вершины 7; </li>
+        <li>Выводим поддерево вершины 5 — левого ребенка вершины 1; </li>
+        <li>Выводим поддерево вершины 10 — левого ребенка вершины 5; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 10</span>; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 5</span>; </li>
+        <li>Выводим поддерево вершины 4 — правого ребенка вершины 5; </li>
+        <li>Выводим поддерево вершины 8 — левого ребенка вершины 4; </li>
+        <li>Выводим поддерево вершины 2 — левого ребенка вершины 8; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 2</span>; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 8</span>; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 4</span>; </li>
+        <li>Выводим поддерево вершины 9 — правого ребенка вершины 4; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 9</span>; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 1</span>; </li>
+        <li>Выводим поддерево вершины 3 — правого ребенка вершины 1; </li>
+        <li>Выводим поддерево вершины 6 — левого ребенка вершины 3; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 6</span>; </li>
+        <li><span style="font-weight: bold;">Выводим вершину 3</span>;</li>
+      </ul>
+      <p></p>
+      <p></p>
+      <p></p>
+
+    </div>
+  </div></div><a name="998/2022_08_08/W87xnMMcvR"></a><div class="problem__messages"><div class="problem__available-message"></div></div><div class="problem__solution"><div class="solution solution_type_compiler-list i-bem" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;998/2022_08_08/W87xnMMcvR@compilerId&quot;,&quot;problemId&quot;:&quot;998/2022_08_08/W87xnMMcvR&quot;,&quot;compilerId&quot;:&quot;openjdk15&quot;,&quot;maxFileSize&quot;:262144,&quot;validation&quot;:{}}}"><label class="solution__label" for="998/2022_08_08/W87xnMMcvR@compilerId">Язык</label><span class="select select_size_s select_theme_normal select_role_compiler-list select_layout_fixed-l i-bem" data-bem="{&quot;select&quot;:{&quot;rows&quot;:8,&quot;live&quot;:true,&quot;selected&quot;:&quot;openjdk15&quot;}}"><button class="button button_theme_normal button_arrow_down button_size_s select__button i-bem" data-bem="{&quot;button&quot;:{}}" role="listbox" type="button" aria-haspopup="true" aria-expanded="false"><span class="button__text">OpenJDK Java 15</span></button><select class="select__control" name="998/2022_08_08/W87xnMMcvR@compilerId" id="uniq16619080517819459" tabindex="-1" aria-hidden="true" autocomplete="off" value="openjdk15"><option class="select__option" value="gcc_cpp20">GNU C++20 10.2</option><option class="select__option" value="golang_docker">Golang 1.16</option><option class="select__option" value="kotlin_1_5_0">Kotlin 1.5.32 (JRE 11)</option><option class="select__option" value="openjdk15" selected="selected">OpenJDK Java 15</option><option class="select__option" value="php7_3_5">PHP 7.3.5</option><option class="select__option" value="pypy3_7_1_0">Python 3.7 (PyPy 7.3.3)</option><option class="select__option" value="scala_docker">Scala 2.13.4</option></select></span></div><div class="solution solution_type_group solution_selected_text i-bem" data-bem="{&quot;solution&quot;:{&quot;id&quot;:&quot;998/2022_08_08/W87xnMMcvR@solution&quot;,&quot;problemId&quot;:&quot;998/2022_08_08/W87xnMMcvR&quot;,&quot;compilerId&quot;:&quot;openjdk15&quot;,&quot;maxFileSize&quot;:262144}}"><div class="solution__field solution__field_role_switcher"><span class="radio-button radio-button_size_s radio-button_theme_normal i-bem" data-bem="{&quot;radio-button&quot;:{&quot;live&quot;:false}}"><label class="radio-button__radio radio-button__radio_checked_yes radio-button__radio_pressed_yes radio-button__radio_side_left" for="uniq16619080517819460"><input class="radio-button__control" value="text" checked="checked" id="uniq16619080517819460" type="radio" name="998/2022_08_08/W87xnMMcvR@solution"/><span class="radio-button__text">Набрать здесь</span></label><label class="radio-button__radio radio-button__radio_side_right radio-button__radio_next-for-pressed_yes" for="uniq16619080517819461"><input class="radio-button__control" value="file" id="uniq16619080517819461" type="radio" name="998/2022_08_08/W87xnMMcvR@solution"/><span class="radio-button__text">Отправить файл</span></label></span></div><div class="solution__field solution__field_role_panes"><div class="solution__pane solution__pane_name_text"><span class="input input_type_textarea input_size_s input_disabled_yes input_role_code-type-text input_theme_normal i-bem" data-bem="{&quot;input&quot;:{&quot;live&quot;:false}}"><span class="input__box"><textarea class="input__control" id="uniq16619080517819462" name="998/2022_08_08/W87xnMMcvR@text" disabled="disabled" aria-labelledby="labeluniq16619080517819462 hintuniq16619080517819462" rows="8" cols="10"></textarea><span class="input__clear" unselectable="on"></span></span></span></div><div class="solution__pane solution__pane_name_file"><span class="attach attach_theme_normal attach_size_s attach_disabled_yes attach_role_code-type-attach attach_for_contest i-bem" data-bem="{&quot;attach&quot;:{&quot;live&quot;:false}}"><span class="button button_theme_normal button_size_s button_disabled_yes attach__button i-bem" data-bem="{&quot;button&quot;:{}}"><span class="button__text" id="textuniq16619080517819463" aria-hidden="true">Выбрать</span><input class="attach__control button__control" type="file" name="998/2022_08_08/W87xnMMcvR@file" id="uniq16619080517819463" aria-labelledby="textuniq16619080517819463" disabled="disabled"/></span><span class="attach__holder attach__holder_state_hidden" aria-hidden="true"><img class="image attach__icon-file" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><span class="attach__text">Файл не выбран</span><img class="image attach__reset" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/></span></span></div></div></div></div></fieldset><div class="problem__send"><input type="hidden" name="sk" value="uc5986e46c6e1a40707b62badbfc4bd30"/><input type="hidden" name="retpath" value="https://contest.yandex.ru/contest/39459/problems/C/#998/2022_08_08/W87xnMMcvR"/><button class="button button_theme_action button_size_s button_role_submit i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="submit"><span class="button__text">Отправить</span></button></div><div class="problem__attempts"><div class="msg msg_type_info"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/>осталось 100 попыток</div></div><div class="problem__problems-nav"><span class="problem__problems-nav-left"><a class="button button_theme_normal button_size_s i-bem" data-bem="{&quot;button&quot;:{}}" role="button" href="/contest/39459/problems/B/"><span class="button__text">Предыдущая</span></a></span><span class="problem__problems-nav-right"><a class="button button_theme_normal button_size_s i-bem" data-bem="{&quot;button&quot;:{}}" role="button" href="/contest/39459/problems/D/"><span class="button__text">Следующая</span></a></span></div></form><ul class="tabs-menu tabs-menu_theme_normal tabs-menu_layout_vert tabs-menu_size_m tabs-menu_role_problems inline-block i-bem" data-bem="{&quot;tabs-menu&quot;:{}}" role="menu"><li class="tabs-menu__tab tabs-menu__tab_first_yes"><a class="link" href="/contest/39459/problems/A/"><span class="tabs-menu__tab-content-text">A. Хитрый шифр</span><div class="submit-status submit-status_size_small submit-status_verdict_OK submit-status_mood_success popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="OK"><a class="link image image_type_success" href="/contest/39459/run-report/69892284/">&amp;nbsp;</a></div></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/B/"><span class="tabs-menu__tab-content-text">B. Через тернии к клиенту</span><div class="submit-status submit-status_size_small submit-status_verdict_TL submit-status_mood_fail popupable i-bem" data-bem="{&quot;popupable&quot;:{&quot;hover&quot;:true,&quot;popupParams&quot;:{&quot;directions&quot;:&quot;top&quot;}}}" title="Превышен лимит времени исполнения"><a class="link image image_type_fail" href="/contest/39459/run-report/69893135/">&amp;nbsp;</a></div></a></li><li class="tabs-menu__tab tabs-menu__tab_active_yes"><a class="link" href="/contest/39459/problems/C/"><span class="tabs-menu__tab-content-text">C. Приснится же такое...</span></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/D/"><span class="tabs-menu__tab-content-text">D. Лей, лей, не жалей</span></a></li><li class="tabs-menu__tab"><a class="link" href="/contest/39459/problems/E/"><span class="tabs-menu__tab-content-text">E. Занимательная алхимия</span></a></li></ul><div class="msg msg_type_info"><img class="image msg__icon" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""/>Посылок нет</div></div></div><div class="page__foot"><div class="footer clearfix" role="contentinfo"><div class="footer__column"><a class="link footer__link" href="//yandex.ru/support/contest/index.html">Справка</a><a class="link footer__link" href="//yandex.ru/support/contest/troubleshooting.xml?form1580-cntst_link=http%3A%2F%2Fcontest.yandex.ru%2Fcontest%2F39459%2Fproblems%2FC%2F&amp;form1580-cntst_login=Vadim%20Kuznetsov">Обратная связь</a><a class="link footer__link" href="https://yandex.ru/legal/contest_termsofuse/">Пользовательское соглашение</a></div><div class="footer__column footer__column_side_right"><div class="copyright">&copy;&nbsp;2013&ndash;2022&nbsp;&nbsp;ООО «<a class="copyright__link footer__link" href="http://www.yandex.ru">Яндекс</a>»</div></div></div></div><i class="b-statcounter"><i class="b-statcounter__metrika b-statcounter__metrika_type_js i-bem" data-bem="{&quot;b-statcounter__metrika&quot;:{&quot;id&quot;:16150693}}"><noscript><img alt="" src="//mc.yandex.ru/watch/16150693"/></noscript></i></i></body></html>
